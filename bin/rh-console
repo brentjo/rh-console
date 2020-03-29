@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+require_relative '../lib/robinhood_console'
+
+console = RobinhoodConsole.new
+console.initialize_client
+console.print_help_text
+console.menu_loop

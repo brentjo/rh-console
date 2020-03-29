@@ -1,0 +1,2554 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Class: RobinhoodConsole
+  
+    &mdash; Documentation by YARD 0.9.20
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  pathId = "RobinhoodConsole";
+  relpath = '';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="_index.html">Index (R)</a> &raquo;
+    
+    
+    <span class="title">RobinhoodConsole</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><h1>Class: RobinhoodConsole
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+  <dl>
+    <dt>Inherits:</dt>
+    <dd>
+      <span class="inheritName">Object</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">RobinhoodConsole</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+    </dd>
+  </dl>
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+  <dl>
+    <dt>Defined in:</dt>
+    <dd>lib/robinhood_console.rb</dd>
+  </dl>
+  
+</div>
+
+
+
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#handle_account-instance_method" title="#handle_account (instance method)">#<strong>handle_account</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#handle_backup-instance_method" title="#handle_backup (instance method)">#<strong>handle_backup</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#handle_buy_option-instance_method" title="#handle_buy_option (instance method)">#<strong>handle_buy_option</strong>(commands)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#handle_buy_or_sell-instance_method" title="#handle_buy_or_sell (instance method)">#<strong>handle_buy_or_sell</strong>(keyword, options)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#handle_cancel_option_order-instance_method" title="#handle_cancel_option_order (instance method)">#<strong>handle_cancel_option_order</strong>(commands)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#handle_cancel_stock_order-instance_method" title="#handle_cancel_stock_order (instance method)">#<strong>handle_cancel_stock_order</strong>(commands)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#handle_get-instance_method" title="#handle_get (instance method)">#<strong>handle_get</strong>(commands)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#handle_menu_input-instance_method" title="#handle_menu_input (instance method)">#<strong>handle_menu_input</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#handle_option_order-instance_method" title="#handle_option_order (instance method)">#<strong>handle_option_order</strong>(commands)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#handle_option_orders-instance_method" title="#handle_option_orders (instance method)">#<strong>handle_option_orders</strong>(options)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#handle_portfolio-instance_method" title="#handle_portfolio (instance method)">#<strong>handle_portfolio</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#handle_quote-instance_method" title="#handle_quote (instance method)">#<strong>handle_quote</strong>(commands)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#handle_stock_order-instance_method" title="#handle_stock_order (instance method)">#<strong>handle_stock_order</strong>(commands)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#handle_stock_orders-instance_method" title="#handle_stock_orders (instance method)">#<strong>handle_stock_orders</strong>(options)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#handle_stream_option-instance_method" title="#handle_stream_option (instance method)">#<strong>handle_stream_option</strong>(commands)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#handle_stream_stock-instance_method" title="#handle_stream_stock (instance method)">#<strong>handle_stream_stock</strong>(commands)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#handle_user-instance_method" title="#handle_user (instance method)">#<strong>handle_user</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#help-instance_method" title="#help (instance method)">#<strong>help</strong>  &#x21d2; String </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Help text for the console.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)">#<strong>initialize</strong>  &#x21d2; RobinhoodConsole </a>
+    
+
+    
+  </span>
+  
+  
+    <span class="note title constructor">constructor</span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>A new instance of RobinhoodConsole.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize_client-instance_method" title="#initialize_client (instance method)">#<strong>initialize_client</strong>  &#x21d2; RobinhoodClient </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Prompt the user for credentials and initialize the Robinhood client.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#menu_loop-instance_method" title="#menu_loop (instance method)">#<strong>menu_loop</strong>  &#x21d2; nil </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Begin input loop.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#print_help_text-instance_method" title="#print_help_text (instance method)">#<strong>print_help_text</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+<div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <div class="method_details first">
+  <h3 class="signature first" id="initialize-instance_method">
+  
+    #<strong>initialize</strong>  &#x21d2; <tt><span class='object_link'><a href="" title="RobinhoodConsole (class)">RobinhoodConsole</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns a new instance of RobinhoodConsole</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+9
+10
+11
+12
+13
+14
+15</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/robinhood_console.rb', line 9</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span>
+  <span class='kw'>if</span> <span class='const'>ENV</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>RH_SAFEMODE_OFF</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>1</span><span class='tstring_end'>&quot;</span></span>
+    <span class='ivar'>@safe_mode</span> <span class='op'>=</span> <span class='kw'>false</span>
+  <span class='kw'>else</span>
+    <span class='ivar'>@safe_mode</span> <span class='op'>=</span> <span class='kw'>true</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+  
+</div>
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="handle_account-instance_method">
+  
+    #<strong>handle_account</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+281
+282
+283
+284</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/robinhood_console.rb', line 281</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_handle_account'>handle_account</span>
+  <span class='id identifier rubyid_accounts'>accounts</span> <span class='op'>=</span> <span class='ivar'>@client</span><span class='period'>.</span><span class='id identifier rubyid_accounts'>accounts</span>
+  <span class='const'>JSON</span><span class='period'>.</span><span class='id identifier rubyid_pretty_generate'>pretty_generate</span><span class='lparen'>(</span><span class='id identifier rubyid_accounts'>accounts</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="handle_backup-instance_method">
+  
+    #<strong>handle_backup</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+298
+299
+300
+301
+302
+303
+304
+305
+306
+307
+308
+309
+310
+311
+312
+313</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/robinhood_console.rb', line 298</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_handle_backup'>handle_backup</span>
+  <span class='id identifier rubyid_items'>items</span> <span class='op'>=</span> <span class='ivar'>@client</span><span class='period'>.</span><span class='id identifier rubyid_default_watchlist'>default_watchlist</span>
+  <span class='id identifier rubyid_directory_name'>directory_name</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>historical_data</span><span class='tstring_end'>&quot;</span></span>
+  <span class='const'>FileUtils</span><span class='period'>.</span><span class='id identifier rubyid_mkdir'>mkdir</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>historical_data</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span> <span class='kw'>unless</span> <span class='const'>Dir</span><span class='period'>.</span><span class='id identifier rubyid_exists?'>exists?</span><span class='lparen'>(</span><span class='id identifier rubyid_directory_name'>directory_name</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_items'>items</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_item'>item</span><span class='op'>|</span>
+    <span class='id identifier rubyid_symbol'>symbol</span> <span class='op'>=</span> <span class='ivar'>@client</span><span class='period'>.</span><span class='id identifier rubyid_instrument_to_symbol_lookup'>instrument_to_symbol_lookup</span><span class='lparen'>(</span><span class='id identifier rubyid_item'>item</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>instrument</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_date'>date</span> <span class='op'>=</span> <span class='const'>Time</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span>
+    <span class='id identifier rubyid_date'>date</span> <span class='op'>=</span> <span class='id identifier rubyid_date'>date</span><span class='period'>.</span><span class='id identifier rubyid_month'>month</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>-</span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span> <span class='id identifier rubyid_date'>date</span><span class='period'>.</span><span class='id identifier rubyid_day'>day</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>-</span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span> <span class='id identifier rubyid_date'>date</span><span class='period'>.</span><span class='id identifier rubyid_year'>year</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span>
+    <span class='id identifier rubyid_file_name'>file_name</span> <span class='op'>=</span> <span class='const'>File</span><span class='period'>.</span><span class='id identifier rubyid_join'>join</span><span class='lparen'>(</span><span class='id identifier rubyid_directory_name'>directory_name</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_symbol'>symbol</span><span class='embexpr_end'>}</span><span class='tstring_content'>_</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_date'>date</span><span class='embexpr_end'>}</span><span class='tstring_content'>_WEEKLY.json</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+    <span class='const'>File</span><span class='period'>.</span><span class='id identifier rubyid_open'>open</span><span class='lparen'>(</span><span class='id identifier rubyid_file_name'>file_name</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>w</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_f'>f</span><span class='op'>|</span>
+      <span class='id identifier rubyid_f'>f</span><span class='period'>.</span><span class='id identifier rubyid_write'>write</span><span class='lparen'>(</span><span class='ivar'>@client</span><span class='period'>.</span><span class='id identifier rubyid_historical_quote'>historical_quote</span><span class='lparen'>(</span><span class='id identifier rubyid_symbol'>symbol</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>5minute</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>week</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_to_json'>to_json</span><span class='rparen'>)</span>
+    <span class='kw'>end</span>
+    <span class='id identifier rubyid_puts'>puts</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Wrote to </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_file_name'>file_name</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+  <span class='kw'>end</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Finished writing </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_items'>items</span><span class='period'>.</span><span class='id identifier rubyid_length'>length</span><span class='embexpr_end'>}</span><span class='tstring_content'> items.</span><span class='tstring_end'>&quot;</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="handle_buy_option-instance_method">
+  
+    #<strong>handle_buy_option</strong>(commands)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+495
+496
+497
+498
+499
+500
+501
+502
+503
+504
+505
+506
+507
+508
+509
+510
+511
+512
+513
+514
+515
+516
+517
+518
+519
+520
+521
+522
+523
+524
+525
+526
+527
+528
+529
+530
+531
+532
+533
+534
+535
+536
+537
+538
+539
+540
+541
+542
+543
+544
+545
+546
+547
+548
+549
+550
+551
+552
+553
+554
+555
+556
+557
+558
+559
+560
+561
+562
+563
+564
+565
+566
+567
+568
+569
+570
+571
+572
+573
+574
+575
+576
+577
+578</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/robinhood_console.rb', line 495</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_handle_buy_option'>handle_buy_option</span><span class='lparen'>(</span><span class='id identifier rubyid_commands'>commands</span><span class='rparen'>)</span>
+  <span class='kw'>unless</span> <span class='id identifier rubyid_commands'>commands</span><span class='period'>.</span><span class='id identifier rubyid_first'>first</span>
+    <span class='kw'>return</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Error: Please supply a symbol</span><span class='tstring_end'>&quot;</span></span>
+  <span class='kw'>end</span>
+
+  <span class='id identifier rubyid_symbol'>symbol</span> <span class='op'>=</span> <span class='id identifier rubyid_commands'>commands</span><span class='period'>.</span><span class='id identifier rubyid_first'>first</span><span class='period'>.</span><span class='id identifier rubyid_upcase'>upcase</span>
+  <span class='id identifier rubyid_chain_id'>chain_id</span><span class='comma'>,</span> <span class='id identifier rubyid_expiration_dates'>expiration_dates</span> <span class='op'>=</span> <span class='ivar'>@client</span><span class='period'>.</span><span class='id identifier rubyid_get_chain_and_expirations'>get_chain_and_expirations</span><span class='lparen'>(</span><span class='id identifier rubyid_symbol'>symbol</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_expiration_headings'>expiration_headings</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Index</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Expiration</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_expiration_rows'>expiration_rows</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_expiration_dates'>expiration_dates</span><span class='period'>.</span><span class='id identifier rubyid_each_with_index'>each_with_index</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_expiration_date'>expiration_date</span><span class='comma'>,</span> <span class='id identifier rubyid_index'>index</span><span class='op'>|</span>
+    <span class='id identifier rubyid_expiration_rows'>expiration_rows</span> <span class='op'>&lt;&lt;</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_index'>index</span> <span class='op'>+</span> <span class='int'>1</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_expiration_date'>expiration_date</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+  <span class='kw'>end</span>
+  <span class='id identifier rubyid_expiration_table'>expiration_table</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="Table.html" title="Table (module)">Table</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Table.html#new-class_method" title="Table.new (method)">new</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_expiration_headings'>expiration_headings</span><span class='comma'>,</span> <span class='id identifier rubyid_expiration_rows'>expiration_rows</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_puts'>puts</span> <span class='id identifier rubyid_expiration_table'>expiration_table</span>
+  <span class='id identifier rubyid_print'>print</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>\nSelect an expiration date: </span><span class='tstring_end'>&quot;</span></span>
+
+  <span class='comment'># Get expiration date
+</span>  <span class='id identifier rubyid_expiration_index'>expiration_index</span> <span class='op'>=</span> <span class='id identifier rubyid_gets'>gets</span><span class='period'>.</span><span class='id identifier rubyid_chomp'>chomp</span>
+  <span class='id identifier rubyid_expiration_date'>expiration_date</span> <span class='op'>=</span> <span class='id identifier rubyid_expiration_dates'>expiration_dates</span><span class='lbracket'>[</span><span class='id identifier rubyid_expiration_index'>expiration_index</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span> <span class='op'>-</span> <span class='int'>1</span><span class='rbracket'>]</span>
+
+  <span class='comment'>#Get type
+</span>  <span class='id identifier rubyid_type_headings'>type_headings</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Index</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Type</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_type_rows'>type_rows</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_type_rows'>type_rows</span> <span class='op'>&lt;&lt;</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>1</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Call</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_type_rows'>type_rows</span> <span class='op'>&lt;&lt;</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>2</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Put</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+
+  <span class='id identifier rubyid_type_table'>type_table</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="Table.html" title="Table (module)">Table</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Table.html#new-class_method" title="Table.new (method)">new</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_type_headings'>type_headings</span><span class='comma'>,</span> <span class='id identifier rubyid_type_rows'>type_rows</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_puts'>puts</span> <span class='id identifier rubyid_type_table'>type_table</span>
+
+  <span class='id identifier rubyid_print'>print</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>\nSelect a type: </span><span class='tstring_end'>&quot;</span></span>
+
+  <span class='id identifier rubyid_type'>type</span> <span class='op'>=</span> <span class='id identifier rubyid_gets'>gets</span><span class='period'>.</span><span class='id identifier rubyid_chomp'>chomp</span>
+  <span class='id identifier rubyid_type'>type</span> <span class='op'>=</span> <span class='kw'>if</span> <span class='id identifier rubyid_type'>type</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>1</span><span class='tstring_end'>&quot;</span></span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>call</span><span class='tstring_end'>&quot;</span></span>
+  <span class='kw'>else</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>put</span><span class='tstring_end'>&quot;</span></span>
+  <span class='kw'>end</span>
+
+  <span class='id identifier rubyid_instruments'>instruments</span> <span class='op'>=</span> <span class='ivar'>@client</span><span class='period'>.</span><span class='id identifier rubyid_get_option_instruments'>get_option_instruments</span><span class='lparen'>(</span><span class='id identifier rubyid_type'>type</span><span class='comma'>,</span> <span class='id identifier rubyid_expiration_date'>expiration_date</span><span class='comma'>,</span> <span class='id identifier rubyid_chain_id'>chain_id</span><span class='rparen'>)</span>
+
+  <span class='comment'># Prompt for which one
+</span>  <span class='id identifier rubyid_instrument_headings'>instrument_headings</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Index</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Strike</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_instrument_rows'>instrument_rows</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_instruments'>instruments</span> <span class='op'>=</span> <span class='id identifier rubyid_instruments'>instruments</span><span class='period'>.</span><span class='id identifier rubyid_sort'>sort</span> <span class='lbrace'>{</span><span class='op'>|</span><span class='id identifier rubyid_a'>a</span><span class='comma'>,</span><span class='id identifier rubyid_b'>b</span><span class='op'>|</span> <span class='id identifier rubyid_a'>a</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>strike_price</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span> <span class='op'>&lt;=&gt;</span> <span class='id identifier rubyid_b'>b</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>strike_price</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span><span class='rbrace'>}</span>
+  <span class='id identifier rubyid_instruments'>instruments</span><span class='period'>.</span><span class='id identifier rubyid_each_with_index'>each_with_index</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_instrument'>instrument</span><span class='comma'>,</span> <span class='id identifier rubyid_index'>index</span><span class='op'>|</span>
+    <span class='id identifier rubyid_instrument_rows'>instrument_rows</span> <span class='op'>&lt;&lt;</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_index'>index</span> <span class='op'>+</span> <span class='int'>1</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>%.2f</span><span class='tstring_end'>&#39;</span></span> <span class='op'>%</span> <span class='id identifier rubyid_instrument'>instrument</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>strike_price</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+  <span class='kw'>end</span>
+
+  <span class='id identifier rubyid_instrument_table'>instrument_table</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="Table.html" title="Table (module)">Table</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Table.html#new-class_method" title="Table.new (method)">new</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_instrument_headings'>instrument_headings</span><span class='comma'>,</span> <span class='id identifier rubyid_instrument_rows'>instrument_rows</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_puts'>puts</span> <span class='id identifier rubyid_instrument_table'>instrument_table</span>
+
+  <span class='id identifier rubyid_print'>print</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>\nSelect a strike: </span><span class='tstring_end'>&quot;</span></span>
+
+  <span class='id identifier rubyid_instrument_index'>instrument_index</span> <span class='op'>=</span> <span class='id identifier rubyid_gets'>gets</span><span class='period'>.</span><span class='id identifier rubyid_chomp'>chomp</span>
+  <span class='id identifier rubyid_instrument'>instrument</span> <span class='op'>=</span> <span class='id identifier rubyid_instruments'>instruments</span><span class='lbracket'>[</span><span class='id identifier rubyid_instrument_index'>instrument_index</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span> <span class='op'>-</span> <span class='int'>1</span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>url</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+
+  <span class='id identifier rubyid_print'>print</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>\nLimit price per contract: </span><span class='tstring_end'>&quot;</span></span>
+
+  <span class='id identifier rubyid_price'>price</span> <span class='op'>=</span> <span class='id identifier rubyid_gets'>gets</span><span class='period'>.</span><span class='id identifier rubyid_chomp'>chomp</span>
+
+  <span class='id identifier rubyid_print'>print</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>\nQuantity: </span><span class='tstring_end'>&quot;</span></span>
+
+  <span class='id identifier rubyid_quantity'>quantity</span> <span class='op'>=</span> <span class='id identifier rubyid_gets'>gets</span><span class='period'>.</span><span class='id identifier rubyid_chomp'>chomp</span>
+
+  <span class='kw'>if</span> <span class='ivar'>@safe_mode</span>
+    <span class='id identifier rubyid_puts'>puts</span> <span class='ivar'>@client</span><span class='period'>.</span><span class='id identifier rubyid_place_option_order'>place_option_order</span><span class='lparen'>(</span><span class='id identifier rubyid_instrument'>instrument</span><span class='comma'>,</span> <span class='id identifier rubyid_quantity'>quantity</span><span class='comma'>,</span> <span class='id identifier rubyid_price'>price</span><span class='comma'>,</span> <span class='label'>dry_run:</span> <span class='kw'>true</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_print'>print</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>\nPlace this trade? (Y/n): </span><span class='tstring_end'>&quot;</span></span>
+    <span class='id identifier rubyid_confirmation'>confirmation</span> <span class='op'>=</span> <span class='id identifier rubyid_gets'>gets</span><span class='period'>.</span><span class='id identifier rubyid_chomp'>chomp</span>
+    <span class='kw'>if</span> <span class='id identifier rubyid_confirmation'>confirmation</span><span class='period'>.</span><span class='id identifier rubyid_downcase'>downcase</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>y</span><span class='tstring_end'>&quot;</span></span> <span class='op'>||</span> <span class='id identifier rubyid_confirmation'>confirmation</span><span class='period'>.</span><span class='id identifier rubyid_downcase'>downcase</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>yes</span><span class='tstring_end'>&quot;</span></span>
+      <span class='kw'>if</span> <span class='ivar'>@client</span><span class='period'>.</span><span class='id identifier rubyid_place_option_order'>place_option_order</span><span class='lparen'>(</span><span class='id identifier rubyid_instrument'>instrument</span><span class='comma'>,</span> <span class='id identifier rubyid_quantity'>quantity</span><span class='comma'>,</span> <span class='id identifier rubyid_price'>price</span><span class='comma'>,</span> <span class='label'>dry_run:</span> <span class='kw'>false</span><span class='rparen'>)</span>
+        <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>\nOrder successfully placed.</span><span class='tstring_end'>&quot;</span></span>
+      <span class='kw'>else</span>
+        <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>\nError placing order.</span><span class='tstring_end'>&quot;</span></span>
+      <span class='kw'>end</span>
+    <span class='kw'>end</span>
+  <span class='kw'>else</span>
+    <span class='kw'>if</span> <span class='ivar'>@client</span><span class='period'>.</span><span class='id identifier rubyid_place_option_order'>place_option_order</span><span class='lparen'>(</span><span class='id identifier rubyid_instrument'>instrument</span><span class='comma'>,</span> <span class='id identifier rubyid_quantity'>quantity</span><span class='comma'>,</span> <span class='id identifier rubyid_price'>price</span><span class='comma'>,</span> <span class='label'>dry_run:</span> <span class='kw'>false</span><span class='rparen'>)</span>
+      <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>\nOrder successfully placed.</span><span class='tstring_end'>&quot;</span></span>
+    <span class='kw'>else</span>
+      <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>\nError placing order.</span><span class='tstring_end'>&quot;</span></span>
+    <span class='kw'>end</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="handle_buy_or_sell-instance_method">
+  
+    #<strong>handle_buy_or_sell</strong>(keyword, options)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/robinhood_console.rb', line 166</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_handle_buy_or_sell'>handle_buy_or_sell</span><span class='lparen'>(</span><span class='id identifier rubyid_keyword'>keyword</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span>
+  <span class='kw'>unless</span> <span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='symbol'>:symbol</span><span class='rbracket'>]</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='symbol'>:quantity</span><span class='rbracket'>]</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='symbol'>:price</span><span class='rbracket'>]</span>
+    <span class='kw'>return</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Error: Please supply a symbol, quantity, and price.</span><span class='tstring_end'>&quot;</span></span>
+  <span class='kw'>else</span>
+
+    <span class='id identifier rubyid_action'>action</span> <span class='op'>=</span> <span class='kw'>if</span> <span class='id identifier rubyid_keyword'>keyword</span><span class='period'>.</span><span class='id identifier rubyid_downcase'>downcase</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>buy-stock</span><span class='tstring_end'>&quot;</span></span>
+      <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>buy</span><span class='tstring_end'>&quot;</span></span>
+    <span class='kw'>elsif</span> <span class='id identifier rubyid_keyword'>keyword</span><span class='period'>.</span><span class='id identifier rubyid_downcase'>downcase</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>sell-stock</span><span class='tstring_end'>&quot;</span></span>
+      <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>sell</span><span class='tstring_end'>&quot;</span></span>
+    <span class='kw'>end</span>
+
+    <span class='kw'>if</span> <span class='ivar'>@safe_mode</span>
+      <span class='id identifier rubyid_puts'>puts</span> <span class='ivar'>@client</span><span class='period'>.</span><span class='id identifier rubyid_place_order'>place_order</span><span class='lparen'>(</span><span class='id identifier rubyid_action'>action</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='symbol'>:symbol</span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='symbol'>:quantity</span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='symbol'>:price</span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='label'>dry_run:</span> <span class='kw'>true</span><span class='rparen'>)</span>
+      <span class='id identifier rubyid_print'>print</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>\nPlace this trade? (Y/n): </span><span class='tstring_end'>&quot;</span></span>
+      <span class='id identifier rubyid_confirmation'>confirmation</span> <span class='op'>=</span> <span class='id identifier rubyid_gets'>gets</span><span class='period'>.</span><span class='id identifier rubyid_chomp'>chomp</span>
+      <span class='kw'>if</span> <span class='id identifier rubyid_confirmation'>confirmation</span><span class='period'>.</span><span class='id identifier rubyid_downcase'>downcase</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>y</span><span class='tstring_end'>&quot;</span></span> <span class='op'>||</span> <span class='id identifier rubyid_confirmation'>confirmation</span><span class='period'>.</span><span class='id identifier rubyid_downcase'>downcase</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>yes</span><span class='tstring_end'>&quot;</span></span>
+        <span class='kw'>if</span> <span class='ivar'>@client</span><span class='period'>.</span><span class='id identifier rubyid_place_order'>place_order</span><span class='lparen'>(</span><span class='id identifier rubyid_action'>action</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='symbol'>:symbol</span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='symbol'>:quantity</span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='symbol'>:price</span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='label'>dry_run:</span> <span class='kw'>false</span><span class='rparen'>)</span>
+          <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>\nOrder successfully placed.</span><span class='tstring_end'>&quot;</span></span>
+        <span class='kw'>else</span>
+          <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>\nError placing order.</span><span class='tstring_end'>&quot;</span></span>
+        <span class='kw'>end</span>
+      <span class='kw'>end</span>
+    <span class='kw'>else</span>
+      <span class='kw'>if</span> <span class='ivar'>@client</span><span class='period'>.</span><span class='id identifier rubyid_place_order'>place_order</span><span class='lparen'>(</span><span class='id identifier rubyid_action'>action</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='symbol'>:symbol</span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='symbol'>:quantity</span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='symbol'>:price</span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='label'>dry_run:</span> <span class='kw'>false</span><span class='rparen'>)</span>
+        <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>\nOrder successfully placed.</span><span class='tstring_end'>&quot;</span></span>
+      <span class='kw'>else</span>
+        <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>\nError placing order.</span><span class='tstring_end'>&quot;</span></span>
+      <span class='kw'>end</span>
+    <span class='kw'>end</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="handle_cancel_option_order-instance_method">
+  
+    #<strong>handle_cancel_option_order</strong>(commands)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+580
+581
+582
+583
+584
+585
+586
+587
+588
+589
+590
+591
+592</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/robinhood_console.rb', line 580</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_handle_cancel_option_order'>handle_cancel_option_order</span><span class='lparen'>(</span><span class='id identifier rubyid_commands'>commands</span><span class='rparen'>)</span>
+  <span class='kw'>return</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Error: Must specify &#39;all&#39; or an order ID</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>unless</span> <span class='id identifier rubyid_commands'>commands</span><span class='period'>.</span><span class='id identifier rubyid_first'>first</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_commands'>commands</span><span class='period'>.</span><span class='id identifier rubyid_first'>first</span><span class='period'>.</span><span class='id identifier rubyid_downcase'>downcase</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>all</span><span class='tstring_end'>&quot;</span></span>
+    <span class='id identifier rubyid_number_cancelled'>number_cancelled</span> <span class='op'>=</span> <span class='ivar'>@client</span><span class='period'>.</span><span class='id identifier rubyid_cancel_all_open_option_orders'>cancel_all_open_option_orders</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Cancelled </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_number_cancelled'>number_cancelled</span><span class='embexpr_end'>}</span><span class='tstring_content'> orders.</span><span class='tstring_end'>&quot;</span></span>
+  <span class='kw'>else</span>
+    <span class='kw'>if</span> <span class='ivar'>@client</span><span class='period'>.</span><span class='id identifier rubyid_cancel_option_order'>cancel_option_order</span><span class='lparen'>(</span><span class='id identifier rubyid_commands'>commands</span><span class='period'>.</span><span class='id identifier rubyid_first'>first</span><span class='rparen'>)</span>
+      <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Successfully cancelled the order.</span><span class='tstring_end'>&quot;</span></span>
+    <span class='kw'>else</span>
+      <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Error cancelling the order.</span><span class='tstring_end'>&quot;</span></span>
+    <span class='kw'>end</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="handle_cancel_stock_order-instance_method">
+  
+    #<strong>handle_cancel_stock_order</strong>(commands)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+430
+431
+432
+433
+434
+435
+436
+437
+438
+439
+440
+441
+442</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/robinhood_console.rb', line 430</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_handle_cancel_stock_order'>handle_cancel_stock_order</span><span class='lparen'>(</span><span class='id identifier rubyid_commands'>commands</span><span class='rparen'>)</span>
+  <span class='kw'>return</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Error: Must specify &#39;all&#39; or an order ID</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>unless</span> <span class='id identifier rubyid_commands'>commands</span><span class='period'>.</span><span class='id identifier rubyid_first'>first</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_commands'>commands</span><span class='period'>.</span><span class='id identifier rubyid_first'>first</span><span class='period'>.</span><span class='id identifier rubyid_downcase'>downcase</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>all</span><span class='tstring_end'>&quot;</span></span>
+    <span class='id identifier rubyid_number_cancelled'>number_cancelled</span> <span class='op'>=</span> <span class='ivar'>@client</span><span class='period'>.</span><span class='id identifier rubyid_cancel_all_open_stock_orders'>cancel_all_open_stock_orders</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Cancelled </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_number_cancelled'>number_cancelled</span><span class='embexpr_end'>}</span><span class='tstring_content'> orders.</span><span class='tstring_end'>&quot;</span></span>
+  <span class='kw'>else</span>
+    <span class='kw'>if</span> <span class='ivar'>@client</span><span class='period'>.</span><span class='id identifier rubyid_cancel_stock_order'>cancel_stock_order</span><span class='lparen'>(</span><span class='id identifier rubyid_commands'>commands</span><span class='period'>.</span><span class='id identifier rubyid_first'>first</span><span class='rparen'>)</span>
+      <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Successfully cancelled the order.</span><span class='tstring_end'>&quot;</span></span>
+    <span class='kw'>else</span>
+      <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Error cancelling the order.</span><span class='tstring_end'>&quot;</span></span>
+    <span class='kw'>end</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="handle_get-instance_method">
+  
+    #<strong>handle_get</strong>(commands)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+286
+287
+288
+289
+290
+291
+292
+293
+294
+295
+296</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/robinhood_console.rb', line 286</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_handle_get'>handle_get</span><span class='lparen'>(</span><span class='id identifier rubyid_commands'>commands</span><span class='rparen'>)</span>
+  <span class='kw'>return</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Error: Must specify a URL</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>unless</span> <span class='id identifier rubyid_commands'>commands</span><span class='period'>.</span><span class='id identifier rubyid_first'>first</span>
+
+  <span class='id identifier rubyid_response'>response</span> <span class='op'>=</span> <span class='ivar'>@client</span><span class='period'>.</span><span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='id identifier rubyid_commands'>commands</span><span class='period'>.</span><span class='id identifier rubyid_first'>first</span><span class='rparen'>)</span>
+
+  <span class='const'>JSON</span><span class='period'>.</span><span class='id identifier rubyid_pretty_generate'>pretty_generate</span><span class='lparen'>(</span><span class='const'>JSON</span><span class='period'>.</span><span class='id identifier rubyid_parse'>parse</span><span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='period'>.</span><span class='id identifier rubyid_body'>body</span><span class='rparen'>)</span><span class='rparen'>)</span>
+<span class='kw'>rescue</span> <span class='const'>JSON</span><span class='op'>::</span><span class='const'>ParserError</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Unable to parse response as JSON: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_response'>response</span><span class='period'>.</span><span class='id identifier rubyid_body'>body</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>\nCode: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_response'>response</span><span class='period'>.</span><span class='id identifier rubyid_code'>code</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+<span class='kw'>rescue</span> <span class='const'>URI</span><span class='op'>::</span><span class='const'>InvalidURIError</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Error parsing URI</span><span class='tstring_end'>&quot;</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="handle_menu_input-instance_method">
+  
+    #<strong>handle_menu_input</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/robinhood_console.rb', line 87</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_handle_menu_input'>handle_menu_input</span>
+  <span class='id identifier rubyid_print'>print</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>$ </span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_command'>command</span> <span class='op'>=</span> <span class='id identifier rubyid_gets'>gets</span>
+  <span class='id identifier rubyid_commands'>commands</span> <span class='op'>=</span> <span class='id identifier rubyid_command'>command</span><span class='period'>.</span><span class='id identifier rubyid_gsub'>gsub</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>\s+</span><span class='regexp_end'>/m</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'> </span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_strip'>strip</span><span class='period'>.</span><span class='id identifier rubyid_split'>split</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'> </span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_options'>options</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+  <span class='id identifier rubyid_parser'>parser</span> <span class='op'>=</span> <span class='const'>OptionParser</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span> <span class='kw'>do</span><span class='op'>|</span><span class='id identifier rubyid_opts'>opts</span><span class='op'>|</span>
+
+    <span class='id identifier rubyid_opts'>opts</span><span class='period'>.</span><span class='id identifier rubyid_on'>on</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>-s</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>--symbol symbol</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_symbol'>symbol</span><span class='op'>|</span>
+      <span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='symbol'>:symbol</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_symbol'>symbol</span>
+    <span class='kw'>end</span>
+
+    <span class='id identifier rubyid_opts'>opts</span><span class='period'>.</span><span class='id identifier rubyid_on'>on</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>-q</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>--quantity quantity</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_quantity'>quantity</span><span class='op'>|</span>
+      <span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='symbol'>:quantity</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_quantity'>quantity</span>
+    <span class='kw'>end</span>
+
+    <span class='id identifier rubyid_opts'>opts</span><span class='period'>.</span><span class='id identifier rubyid_on'>on</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>-p</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>--price price</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_price'>price</span><span class='op'>|</span>
+      <span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='symbol'>:price</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_price'>price</span>
+    <span class='kw'>end</span>
+
+    <span class='id identifier rubyid_opts'>opts</span><span class='period'>.</span><span class='id identifier rubyid_on'>on</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>-d</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>--days days</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_days'>days</span><span class='op'>|</span>
+      <span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='symbol'>:days</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_days'>days</span>
+    <span class='kw'>end</span>
+
+    <span class='id identifier rubyid_opts'>opts</span><span class='period'>.</span><span class='id identifier rubyid_on'>on</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>-l</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>--last last</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_last'>last</span><span class='op'>|</span>
+      <span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='symbol'>:last</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_last'>last</span>
+    <span class='kw'>end</span>
+
+  <span class='kw'>end</span>
+
+  <span class='id identifier rubyid_parser'>parser</span><span class='period'>.</span><span class='id identifier rubyid_parse!'>parse!</span><span class='lparen'>(</span><span class='id identifier rubyid_commands'>commands</span><span class='rparen'>)</span>
+
+  <span class='comment'># response = the return value from the &#39;when&#39; block it falls into
+</span>  <span class='comment'># keyword = the word that caused it to match the &quot;when&quot; block
+</span>  <span class='id identifier rubyid_response'>response</span> <span class='op'>=</span> <span class='kw'>case</span> <span class='id identifier rubyid_keyword'>keyword</span> <span class='op'>=</span> <span class='id identifier rubyid_commands'>commands</span><span class='period'>.</span><span class='id identifier rubyid_shift'>shift</span>
+  <span class='kw'>when</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>help</span><span class='tstring_end'>&quot;</span></span>
+    <span class='id identifier rubyid_help'>help</span><span class='lparen'>(</span><span class='rparen'>)</span>
+  <span class='kw'>when</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>user</span><span class='tstring_end'>&quot;</span></span>
+    <span class='id identifier rubyid_handle_user'>handle_user</span><span class='lparen'>(</span><span class='rparen'>)</span>
+  <span class='kw'>when</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>account</span><span class='tstring_end'>&quot;</span></span>
+    <span class='id identifier rubyid_handle_account'>handle_account</span><span class='lparen'>(</span><span class='rparen'>)</span>
+  <span class='kw'>when</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>portfolio</span><span class='tstring_end'>&quot;</span></span>
+    <span class='id identifier rubyid_handle_portfolio'>handle_portfolio</span><span class='lparen'>(</span><span class='rparen'>)</span>
+  <span class='kw'>when</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>stock-orders</span><span class='tstring_end'>&quot;</span></span>
+    <span class='id identifier rubyid_handle_stock_orders'>handle_stock_orders</span><span class='lparen'>(</span><span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span>
+  <span class='kw'>when</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>stock-order</span><span class='tstring_end'>&quot;</span></span>
+    <span class='id identifier rubyid_handle_stock_order'>handle_stock_order</span><span class='lparen'>(</span><span class='id identifier rubyid_commands'>commands</span><span class='rparen'>)</span>
+  <span class='kw'>when</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>option-order</span><span class='tstring_end'>&quot;</span></span>
+    <span class='id identifier rubyid_handle_option_order'>handle_option_order</span><span class='lparen'>(</span><span class='id identifier rubyid_commands'>commands</span><span class='rparen'>)</span>
+  <span class='kw'>when</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>option-orders</span><span class='tstring_end'>&quot;</span></span>
+    <span class='id identifier rubyid_handle_option_orders'>handle_option_orders</span><span class='lparen'>(</span><span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span>
+  <span class='kw'>when</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>buy-stock</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>sell-stock</span><span class='tstring_end'>&quot;</span></span>
+    <span class='id identifier rubyid_handle_buy_or_sell'>handle_buy_or_sell</span><span class='lparen'>(</span><span class='id identifier rubyid_keyword'>keyword</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span>
+  <span class='kw'>when</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>buy-option</span><span class='tstring_end'>&quot;</span></span>
+    <span class='id identifier rubyid_handle_buy_option'>handle_buy_option</span><span class='lparen'>(</span><span class='id identifier rubyid_commands'>commands</span><span class='rparen'>)</span>
+  <span class='kw'>when</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>cancel-stock-order</span><span class='tstring_end'>&quot;</span></span>
+    <span class='id identifier rubyid_handle_cancel_stock_order'>handle_cancel_stock_order</span><span class='lparen'>(</span><span class='id identifier rubyid_commands'>commands</span><span class='rparen'>)</span>
+  <span class='kw'>when</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>cancel-option-order</span><span class='tstring_end'>&quot;</span></span>
+    <span class='id identifier rubyid_handle_cancel_option_order'>handle_cancel_option_order</span><span class='lparen'>(</span><span class='id identifier rubyid_commands'>commands</span><span class='rparen'>)</span>
+  <span class='kw'>when</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>stream-stock</span><span class='tstring_end'>&quot;</span></span>
+    <span class='id identifier rubyid_handle_stream_stock'>handle_stream_stock</span><span class='lparen'>(</span><span class='id identifier rubyid_commands'>commands</span><span class='rparen'>)</span>
+  <span class='kw'>when</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>quote</span><span class='tstring_end'>&quot;</span></span>
+    <span class='id identifier rubyid_handle_quote'>handle_quote</span><span class='lparen'>(</span><span class='id identifier rubyid_commands'>commands</span><span class='rparen'>)</span>
+  <span class='kw'>when</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>stream-option</span><span class='tstring_end'>&quot;</span></span>
+    <span class='id identifier rubyid_handle_stream_option'>handle_stream_option</span><span class='lparen'>(</span><span class='id identifier rubyid_commands'>commands</span><span class='rparen'>)</span>
+  <span class='kw'>when</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>backup</span><span class='tstring_end'>&quot;</span></span>
+    <span class='id identifier rubyid_handle_backup'>handle_backup</span><span class='lparen'>(</span><span class='rparen'>)</span>
+  <span class='kw'>when</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>get</span><span class='tstring_end'>&quot;</span></span>
+    <span class='id identifier rubyid_handle_get'>handle_get</span><span class='lparen'>(</span><span class='id identifier rubyid_commands'>commands</span><span class='rparen'>)</span>
+  <span class='kw'>when</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>exit</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>quit</span><span class='tstring_end'>&quot;</span></span>
+    <span class='id identifier rubyid_exit'>exit</span> <span class='int'>1</span>
+  <span class='kw'>else</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Unknown command </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_command'>command</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>unless</span> <span class='id identifier rubyid_command'>command</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_end'>&quot;</span></span> <span class='op'>||</span> <span class='id identifier rubyid_command'>command</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>\n</span><span class='tstring_end'>&quot;</span></span>
+  <span class='kw'>end</span>
+
+  <span class='id identifier rubyid_puts'>puts</span> <span class='id identifier rubyid_response'>response</span>
+
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="handle_option_order-instance_method">
+  
+    #<strong>handle_option_order</strong>(commands)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+603
+604
+605
+606
+607
+608
+609
+610</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/robinhood_console.rb', line 603</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_handle_option_order'>handle_option_order</span><span class='lparen'>(</span><span class='id identifier rubyid_commands'>commands</span><span class='rparen'>)</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_commands'>commands</span><span class='period'>.</span><span class='id identifier rubyid_first'>first</span>
+    <span class='id identifier rubyid_order'>order</span> <span class='op'>=</span> <span class='ivar'>@client</span><span class='period'>.</span><span class='id identifier rubyid_option_order'>option_order</span><span class='lparen'>(</span><span class='id identifier rubyid_commands'>commands</span><span class='period'>.</span><span class='id identifier rubyid_first'>first</span><span class='rparen'>)</span>
+    <span class='const'>JSON</span><span class='period'>.</span><span class='id identifier rubyid_pretty_generate'>pretty_generate</span><span class='lparen'>(</span><span class='id identifier rubyid_order'>order</span><span class='rparen'>)</span>
+  <span class='kw'>else</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Error: Must specify an order ID</span><span class='tstring_end'>&quot;</span></span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="handle_option_orders-instance_method">
+  
+    #<strong>handle_option_orders</strong>(options)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+463
+464
+465
+466
+467
+468
+469
+470
+471
+472
+473
+474
+475
+476
+477
+478
+479
+480
+481
+482
+483
+484
+485
+486
+487
+488
+489
+490
+491
+492
+493</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/robinhood_console.rb', line 463</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_handle_option_orders'>handle_option_orders</span><span class='lparen'>(</span><span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_orders'>orders</span> <span class='op'>=</span> <span class='ivar'>@client</span><span class='period'>.</span><span class='id identifier rubyid_option_orders'>option_orders</span><span class='lparen'>(</span><span class='label'>last:</span> <span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='symbol'>:last</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_option_order_rows'>option_order_rows</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_orders'>orders</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_order'>order</span><span class='op'>|</span>
+    <span class='id identifier rubyid_leg_count'>leg_count</span> <span class='op'>=</span> <span class='id identifier rubyid_order'>order</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>legs</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_length'>length</span> <span class='kw'>if</span> <span class='id identifier rubyid_order'>order</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>legs</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+
+    <span class='id identifier rubyid_state_color'>state_color</span> <span class='op'>=</span> <span class='kw'>if</span> <span class='id identifier rubyid_order'>order</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>state</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>filled</span><span class='tstring_end'>&quot;</span></span>
+      <span class='symbol'>:green</span>
+    <span class='kw'>elsif</span> <span class='id identifier rubyid_order'>order</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>state</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>cancelled</span><span class='tstring_end'>&quot;</span></span>
+      <span class='symbol'>:red</span>
+    <span class='kw'>end</span>
+
+    <span class='id identifier rubyid_action'>action</span> <span class='op'>=</span> <span class='kw'>if</span> <span class='id identifier rubyid_order'>order</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>opening_strategy</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+      <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>opened</span><span class='tstring_end'>&quot;</span></span>
+    <span class='kw'>elsif</span> <span class='id identifier rubyid_order'>order</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>closing_strategy</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+      <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>closed</span><span class='tstring_end'>&quot;</span></span>
+    <span class='kw'>else</span>
+      <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_end'>&quot;</span></span>
+    <span class='kw'>end</span>
+
+    <span class='id identifier rubyid_strategy'>strategy</span> <span class='op'>=</span> <span class='id identifier rubyid_order'>order</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>opening_strategy</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='id identifier rubyid_order'>order</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>closing_strategy</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_end'>&quot;</span></span>
+
+    <span class='id identifier rubyid_state'>state</span> <span class='op'>=</span> <span class='op'>!</span><span class='id identifier rubyid_state_color'>state_color</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='op'>?</span> <span class='id identifier rubyid_order'>order</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>state</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_send'>send</span><span class='lparen'>(</span><span class='id identifier rubyid_state_color'>state_color</span><span class='rparen'>)</span> <span class='op'>:</span> <span class='id identifier rubyid_order'>order</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>state</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+    <span class='id identifier rubyid_option_order_rows'>option_order_rows</span> <span class='op'>&lt;&lt;</span> <span class='lbracket'>[</span><span class='id identifier rubyid_action'>action</span><span class='comma'>,</span> <span class='id identifier rubyid_strategy'>strategy</span><span class='comma'>,</span> <span class='id identifier rubyid_order'>order</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>chain_symbol</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='id identifier rubyid_order'>order</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>id</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='id identifier rubyid_leg_count'>leg_count</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='comma'>,</span> <span class='id identifier rubyid_order'>order</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>premium</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>%.2f</span><span class='tstring_end'>&#39;</span></span> <span class='op'>%</span> <span class='id identifier rubyid_order'>order</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>price</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>%.2f</span><span class='tstring_end'>&#39;</span></span> <span class='op'>%</span> <span class='id identifier rubyid_order'>order</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>quantity</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_state'>state</span><span class='rbracket'>]</span>
+  <span class='kw'>end</span>
+
+  <span class='id identifier rubyid_option_order_headers'>option_order_headers</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Action</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Strategy</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Symbol</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>ID</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Legs</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Premium</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Price</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Quantity</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>State</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+
+  <span class='const'><span class='object_link'><a href="Table.html" title="Table (module)">Table</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Table.html#new-class_method" title="Table.new (method)">new</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_option_order_headers'>option_order_headers</span><span class='comma'>,</span> <span class='id identifier rubyid_option_order_rows'>option_order_rows</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="handle_portfolio-instance_method">
+  
+    #<strong>handle_portfolio</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+612
+613
+614
+615
+616
+617
+618
+619
+620
+621
+622
+623
+624
+625
+626
+627
+628
+629
+630
+631
+632
+633
+634
+635
+636
+637
+638
+639
+640
+641
+642
+643
+644
+645
+646
+647
+648
+649
+650
+651
+652
+653
+654
+655
+656
+657
+658
+659
+660
+661
+662
+663
+664
+665
+666
+667
+668
+669
+670
+671
+672
+673
+674
+675
+676
+677
+678
+679
+680
+681
+682
+683
+684</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/robinhood_console.rb', line 612</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_handle_portfolio'>handle_portfolio</span>
+  <span class='id identifier rubyid_account'>account</span> <span class='op'>=</span> <span class='ivar'>@client</span><span class='period'>.</span><span class='id identifier rubyid_account'>account</span>
+  <span class='id identifier rubyid_portfolio'>portfolio</span> <span class='op'>=</span> <span class='ivar'>@client</span><span class='period'>.</span><span class='id identifier rubyid_portfolio'>portfolio</span>
+  <span class='id identifier rubyid_stock_positions'>stock_positions</span> <span class='op'>=</span> <span class='ivar'>@client</span><span class='period'>.</span><span class='id identifier rubyid_stock_positions'>stock_positions</span>
+  <span class='id identifier rubyid_options_positions'>options_positions</span> <span class='op'>=</span> <span class='ivar'>@client</span><span class='period'>.</span><span class='id identifier rubyid_option_positions'>option_positions</span>
+
+  <span class='id identifier rubyid_stock_position_rows'>stock_position_rows</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_option_position_rows'>option_position_rows</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_all_time_portfolio_change'>all_time_portfolio_change</span> <span class='op'>=</span> <span class='int'>0</span>
+
+  <span class='id identifier rubyid_stock_positions'>stock_positions</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_position'>position</span><span class='op'>|</span>
+    <span class='id identifier rubyid_stock'>stock</span> <span class='op'>=</span> <span class='ivar'>@client</span><span class='period'>.</span><span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='id identifier rubyid_position'>position</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>instrument</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='label'>return_as_json:</span> <span class='kw'>true</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_quote'>quote</span> <span class='op'>=</span> <span class='ivar'>@client</span><span class='period'>.</span><span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='id identifier rubyid_stock'>stock</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>quote</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='label'>return_as_json:</span> <span class='kw'>true</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_previous_close'>previous_close</span> <span class='op'>=</span> <span class='id identifier rubyid_quote'>quote</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>previous_close</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span>
+    <span class='id identifier rubyid_latest_price'>latest_price</span> <span class='op'>=</span> <span class='id identifier rubyid_quote'>quote</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>last_trade_price</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span>
+    <span class='id identifier rubyid_quantity'>quantity</span> <span class='op'>=</span> <span class='id identifier rubyid_position'>position</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>quantity</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span>
+    <span class='id identifier rubyid_cost_basis'>cost_basis</span> <span class='op'>=</span> <span class='id identifier rubyid_position'>position</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>average_buy_price</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span>
+
+    <span class='id identifier rubyid_day_percent_change'>day_percent_change</span> <span class='op'>=</span> <span class='lparen'>(</span><span class='id identifier rubyid_latest_price'>latest_price</span> <span class='op'>-</span> <span class='id identifier rubyid_previous_close'>previous_close</span><span class='rparen'>)</span> <span class='op'>/</span> <span class='id identifier rubyid_previous_close'>previous_close</span> <span class='op'>*</span> <span class='float'>100.00</span>
+    <span class='id identifier rubyid_day_dollar_change'>day_dollar_change</span> <span class='op'>=</span> <span class='lparen'>(</span><span class='id identifier rubyid_latest_price'>latest_price</span> <span class='op'>-</span> <span class='id identifier rubyid_previous_close'>previous_close</span><span class='rparen'>)</span> <span class='op'>*</span> <span class='id identifier rubyid_quantity'>quantity</span>
+    <span class='id identifier rubyid_all_time_dollar_change'>all_time_dollar_change</span> <span class='op'>=</span> <span class='lparen'>(</span><span class='id identifier rubyid_latest_price'>latest_price</span> <span class='op'>-</span> <span class='id identifier rubyid_cost_basis'>cost_basis</span><span class='rparen'>)</span> <span class='op'>*</span> <span class='id identifier rubyid_quantity'>quantity</span>
+
+    <span class='id identifier rubyid_day_color'>day_color</span> <span class='op'>=</span> <span class='id identifier rubyid_day_dollar_change'>day_dollar_change</span> <span class='op'>&gt;=</span> <span class='int'>0</span> <span class='op'>?</span> <span class='symbol'>:green</span> <span class='op'>:</span> <span class='symbol'>:red</span>
+    <span class='id identifier rubyid_all_time_color'>all_time_color</span> <span class='op'>=</span> <span class='id identifier rubyid_all_time_dollar_change'>all_time_dollar_change</span> <span class='op'>&gt;=</span> <span class='int'>0</span> <span class='op'>?</span> <span class='symbol'>:green</span> <span class='op'>:</span> <span class='symbol'>:red</span>
+
+    <span class='id identifier rubyid_all_time_portfolio_change'>all_time_portfolio_change</span> <span class='op'>+=</span> <span class='id identifier rubyid_all_time_dollar_change'>all_time_dollar_change</span>
+
+    <span class='id identifier rubyid_stock_position_rows'>stock_position_rows</span> <span class='op'>&lt;&lt;</span> <span class='lbracket'>[</span><span class='id identifier rubyid_stock'>stock</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>symbol</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>%.2f</span><span class='tstring_end'>&#39;</span></span> <span class='op'>%</span> <span class='id identifier rubyid_quantity'>quantity</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>$ </span><span class='embexpr_beg'>#{</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>%.2f</span><span class='tstring_end'>&#39;</span></span> <span class='op'>%</span> <span class='id identifier rubyid_latest_price'>latest_price</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>$ </span><span class='embexpr_beg'>#{</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>%.2f</span><span class='tstring_end'>&#39;</span></span> <span class='op'>%</span> <span class='id identifier rubyid_cost_basis'>cost_basis</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>$ </span><span class='embexpr_beg'>#{</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>%.2f</span><span class='tstring_end'>&#39;</span></span> <span class='op'>%</span> <span class='id identifier rubyid_day_dollar_change'>day_dollar_change</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='period'>.</span><span class='id identifier rubyid_send'>send</span><span class='lparen'>(</span><span class='id identifier rubyid_day_color'>day_color</span><span class='rparen'>)</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>%.2f</span><span class='tstring_end'>&#39;</span></span> <span class='op'>%</span> <span class='id identifier rubyid_day_percent_change'>day_percent_change</span><span class='embexpr_end'>}</span><span class='tstring_content'> %</span><span class='tstring_end'>&quot;</span></span><span class='period'>.</span><span class='id identifier rubyid_send'>send</span><span class='lparen'>(</span><span class='id identifier rubyid_day_color'>day_color</span><span class='rparen'>)</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>$ </span><span class='embexpr_beg'>#{</span><span class='ivar'>@client</span><span class='period'>.</span><span class='id identifier rubyid_commarize'>commarize</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>%.2f</span><span class='tstring_end'>&#39;</span></span> <span class='op'>%</span> <span class='id identifier rubyid_all_time_dollar_change'>all_time_dollar_change</span><span class='rparen'>)</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='period'>.</span><span class='id identifier rubyid_send'>send</span><span class='lparen'>(</span><span class='id identifier rubyid_all_time_color'>all_time_color</span><span class='rparen'>)</span><span class='rbracket'>]</span>
+  <span class='kw'>end</span>
+
+  <span class='id identifier rubyid_options_positions'>options_positions</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_option_position'>option_position</span><span class='op'>|</span>
+    <span class='kw'>next</span> <span class='kw'>unless</span> <span class='id identifier rubyid_option_position'>option_position</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>quantity</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span> <span class='op'>&gt;</span> <span class='int'>0</span>
+    <span class='id identifier rubyid_option'>option</span> <span class='op'>=</span> <span class='ivar'>@client</span><span class='period'>.</span><span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='id identifier rubyid_option_position'>option_position</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>option</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='label'>return_as_json:</span> <span class='kw'>true</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_current_price'>current_price</span> <span class='op'>=</span> <span class='ivar'>@client</span><span class='period'>.</span><span class='id identifier rubyid_quote'>quote</span><span class='lparen'>(</span><span class='id identifier rubyid_option_position'>option_position</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>chain_symbol</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rparen'>)</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>last_trade_price</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+    <span class='id identifier rubyid_distance_from_strike'>distance_from_strike</span> <span class='op'>=</span> <span class='id identifier rubyid_current_price'>current_price</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span> <span class='op'>-</span> <span class='id identifier rubyid_option'>option</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>strike_price</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span>
+
+    <span class='id identifier rubyid_quote'>quote</span> <span class='op'>=</span> <span class='ivar'>@client</span><span class='period'>.</span><span class='id identifier rubyid_get_option_quote_by_id'>get_option_quote_by_id</span><span class='lparen'>(</span><span class='id identifier rubyid_option'>option</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>id</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_purchase_price'>purchase_price</span> <span class='op'>=</span> <span class='id identifier rubyid_option_position'>option_position</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>average_price</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span> <span class='op'>/</span> <span class='float'>100.00</span>
+    <span class='id identifier rubyid_current_price'>current_price</span> <span class='op'>=</span> <span class='id identifier rubyid_quote'>quote</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>last_trade_price</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span>
+
+    <span class='kw'>if</span> <span class='id identifier rubyid_option_position'>option_position</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>type</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>short</span><span class='tstring_end'>&quot;</span></span>
+      <span class='id identifier rubyid_purchase_price'>purchase_price</span> <span class='op'>=</span> <span class='id identifier rubyid_purchase_price'>purchase_price</span> <span class='op'>*</span> <span class='op'>-</span><span class='int'>1</span>
+    <span class='kw'>end</span>
+
+    <span class='id identifier rubyid_all_time_change'>all_time_change</span> <span class='op'>=</span> <span class='lparen'>(</span><span class='id identifier rubyid_current_price'>current_price</span> <span class='op'>-</span> <span class='id identifier rubyid_purchase_price'>purchase_price</span><span class='rparen'>)</span> <span class='op'>/</span> <span class='id identifier rubyid_purchase_price'>purchase_price</span> <span class='op'>*</span> <span class='float'>100.0</span>
+
+    <span class='kw'>if</span> <span class='id identifier rubyid_option_position'>option_position</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>type</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>short</span><span class='tstring_end'>&quot;</span></span>
+      <span class='id identifier rubyid_all_time_change'>all_time_change</span> <span class='op'>=</span> <span class='id identifier rubyid_all_time_change'>all_time_change</span> <span class='op'>*</span> <span class='op'>-</span><span class='int'>1</span>
+    <span class='kw'>end</span>
+
+    <span class='id identifier rubyid_all_time_color'>all_time_color</span> <span class='op'>=</span> <span class='id identifier rubyid_all_time_change'>all_time_change</span> <span class='op'>&gt;=</span> <span class='int'>0</span> <span class='op'>?</span> <span class='symbol'>:green</span> <span class='op'>:</span> <span class='symbol'>:red</span>
+    <span class='id identifier rubyid_distance_from_strike_color'>distance_from_strike_color</span> <span class='op'>=</span> <span class='id identifier rubyid_distance_from_strike'>distance_from_strike</span> <span class='op'>&gt;=</span> <span class='int'>0</span> <span class='op'>?</span> <span class='symbol'>:green</span> <span class='op'>:</span> <span class='symbol'>:red</span>
+
+    <span class='id identifier rubyid_option_position_rows'>option_position_rows</span> <span class='op'>&lt;&lt;</span> <span class='lbracket'>[</span><span class='id identifier rubyid_option_position'>option_position</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>chain_symbol</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='id identifier rubyid_option'>option</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>type</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>%.2f</span><span class='tstring_end'>&#39;</span></span> <span class='op'>%</span> <span class='id identifier rubyid_option'>option</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>strike_price</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_option'>option</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>expiration_date</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>%.2f</span><span class='tstring_end'>&#39;</span></span> <span class='op'>%</span> <span class='id identifier rubyid_option_position'>option_position</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>quantity</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_option_position'>option_position</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>type</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>$ </span><span class='embexpr_beg'>#{</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>%.2f</span><span class='tstring_end'>&#39;</span></span> <span class='op'>%</span> <span class='id identifier rubyid_purchase_price'>purchase_price</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>$ </span><span class='embexpr_beg'>#{</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>%.2f</span><span class='tstring_end'>&#39;</span></span> <span class='op'>%</span> <span class='id identifier rubyid_current_price'>current_price</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>%.2f</span><span class='tstring_end'>&#39;</span></span> <span class='op'>%</span> <span class='id identifier rubyid_distance_from_strike'>distance_from_strike</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_send'>send</span><span class='lparen'>(</span><span class='id identifier rubyid_distance_from_strike_color'>distance_from_strike_color</span><span class='rparen'>)</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>%.2f</span><span class='tstring_end'>&#39;</span></span> <span class='op'>%</span> <span class='id identifier rubyid_all_time_change'>all_time_change</span><span class='embexpr_end'>}</span><span class='tstring_content'> % </span><span class='tstring_end'>&quot;</span></span><span class='period'>.</span><span class='id identifier rubyid_send'>send</span><span class='lparen'>(</span><span class='id identifier rubyid_all_time_color'>all_time_color</span><span class='rparen'>)</span><span class='rbracket'>]</span>
+  <span class='kw'>end</span>
+
+  <span class='id identifier rubyid_stock_headings'>stock_headings</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Symbol</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Quantity</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Latest price</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Avg price</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Day Change</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Day Change</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>All time change</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_stocks_table'>stocks_table</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="Table.html" title="Table (module)">Table</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Table.html#new-class_method" title="Table.new (method)">new</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_stock_headings'>stock_headings</span><span class='comma'>,</span> <span class='id identifier rubyid_stock_position_rows'>stock_position_rows</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_portfolio_text'>portfolio_text</span> <span class='op'>=</span> <span class='id identifier rubyid_stocks_table'>stocks_table</span>
+
+  <span class='id identifier rubyid_options_headings'>options_headings</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Symbol</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Type</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Strike</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Exp</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Quantity</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Type</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Avg price</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Market value</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>\u03B7 to strike</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>All time change</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_options_table'>options_table</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="Table.html" title="Table (module)">Table</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Table.html#new-class_method" title="Table.new (method)">new</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_options_headings'>options_headings</span><span class='comma'>,</span> <span class='id identifier rubyid_option_position_rows'>option_position_rows</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_portfolio_text'>portfolio_text</span> <span class='op'>+=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>\n</span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span> <span class='id identifier rubyid_options_table'>options_table</span>
+
+  <span class='id identifier rubyid_all_time_portfolio_color'>all_time_portfolio_color</span> <span class='op'>=</span> <span class='id identifier rubyid_all_time_portfolio_change'>all_time_portfolio_change</span> <span class='op'>&gt;=</span> <span class='int'>0</span> <span class='op'>?</span> <span class='symbol'>:green</span> <span class='op'>:</span> <span class='symbol'>:red</span>
+
+  <span class='id identifier rubyid_portfolio_text'>portfolio_text</span> <span class='op'>+=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>\n\nHoldings: $ </span><span class='embexpr_beg'>#{</span><span class='ivar'>@client</span><span class='period'>.</span><span class='id identifier rubyid_commarize'>commarize</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>%.2f</span><span class='tstring_end'>&#39;</span></span> <span class='op'>%</span> <span class='id identifier rubyid_portfolio'>portfolio</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>market_value</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span><span class='rparen'>)</span><span class='embexpr_end'>}</span><span class='tstring_content'>\n</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_portfolio_text'>portfolio_text</span> <span class='op'>+=</span>     <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Cash:     $ </span><span class='embexpr_beg'>#{</span><span class='ivar'>@client</span><span class='period'>.</span><span class='id identifier rubyid_commarize'>commarize</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>%.2f</span><span class='tstring_end'>&#39;</span></span> <span class='op'>%</span> <span class='lparen'>(</span><span class='id identifier rubyid_account'>account</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>cash</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span> <span class='op'>+</span> <span class='id identifier rubyid_account'>account</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>unsettled_funds</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span><span class='rparen'>)</span><span class='rparen'>)</span><span class='embexpr_end'>}</span><span class='tstring_content'>\n</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_portfolio_text'>portfolio_text</span> <span class='op'>+=</span>     <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Equity:   $ </span><span class='embexpr_beg'>#{</span><span class='ivar'>@client</span><span class='period'>.</span><span class='id identifier rubyid_commarize'>commarize</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>%.2f</span><span class='tstring_end'>&#39;</span></span> <span class='op'>%</span> <span class='id identifier rubyid_portfolio'>portfolio</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>equity</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span><span class='rparen'>)</span><span class='embexpr_end'>}</span><span class='tstring_content'>\n</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_portfolio_text'>portfolio_text</span> <span class='op'>+=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>\nAll time change on stock holdings: </span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>$ </span><span class='embexpr_beg'>#{</span><span class='ivar'>@client</span><span class='period'>.</span><span class='id identifier rubyid_commarize'>commarize</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>%.2f</span><span class='tstring_end'>&#39;</span></span> <span class='op'>%</span> <span class='id identifier rubyid_all_time_portfolio_change'>all_time_portfolio_change</span><span class='rparen'>)</span><span class='embexpr_end'>}</span><span class='tstring_content'>\n</span><span class='tstring_end'>&quot;</span></span><span class='period'>.</span><span class='id identifier rubyid_send'>send</span><span class='lparen'>(</span><span class='id identifier rubyid_all_time_portfolio_color'>all_time_portfolio_color</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_portfolio_text'>portfolio_text</span>
+
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="handle_quote-instance_method">
+  
+    #<strong>handle_quote</strong>(commands)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+257
+258
+259
+260
+261
+262
+263
+264
+265
+266
+267
+268
+269
+270
+271
+272
+273
+274</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/robinhood_console.rb', line 257</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_handle_quote'>handle_quote</span><span class='lparen'>(</span><span class='id identifier rubyid_commands'>commands</span><span class='rparen'>)</span>
+  <span class='kw'>return</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Error: Must specify a symbol</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>unless</span> <span class='id identifier rubyid_commands'>commands</span><span class='period'>.</span><span class='id identifier rubyid_first'>first</span>
+  <span class='id identifier rubyid_symbol'>symbol</span> <span class='op'>=</span> <span class='id identifier rubyid_commands'>commands</span><span class='period'>.</span><span class='id identifier rubyid_first'>first</span>
+
+  <span class='id identifier rubyid_quote'>quote</span> <span class='op'>=</span> <span class='ivar'>@client</span><span class='period'>.</span><span class='id identifier rubyid_quote'>quote</span><span class='lparen'>(</span><span class='id identifier rubyid_symbol'>symbol</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_last_trade_price'>last_trade_price</span> <span class='op'>=</span> <span class='id identifier rubyid_quote'>quote</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>last_trade_price</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span>
+  <span class='id identifier rubyid_bid_price'>bid_price</span> <span class='op'>=</span> <span class='id identifier rubyid_quote'>quote</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>bid_price</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span>
+  <span class='id identifier rubyid_ask_price'>ask_price</span> <span class='op'>=</span> <span class='id identifier rubyid_quote'>quote</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>ask_price</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span>
+
+  <span class='id identifier rubyid_last_trade_price_string'>last_trade_price_string</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="FormatHelpers.html" title="FormatHelpers (module)">FormatHelpers</a></span></span><span class='period'>.</span><span class='id identifier rubyid_format_float'><span class='object_link'><a href="FormatHelpers.html#format_float-class_method" title="FormatHelpers.format_float (method)">format_float</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_last_trade_price'>last_trade_price</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_bid_price_string'>bid_price_string</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="FormatHelpers.html" title="FormatHelpers (module)">FormatHelpers</a></span></span><span class='period'>.</span><span class='id identifier rubyid_format_float'><span class='object_link'><a href="FormatHelpers.html#format_float-class_method" title="FormatHelpers.format_float (method)">format_float</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_bid_price'>bid_price</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_ask_price_string'>ask_price_string</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="FormatHelpers.html" title="FormatHelpers (module)">FormatHelpers</a></span></span><span class='period'>.</span><span class='id identifier rubyid_format_float'><span class='object_link'><a href="FormatHelpers.html#format_float-class_method" title="FormatHelpers.format_float (method)">format_float</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_ask_price'>ask_price</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_quote_response'>quote_response</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>  </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_symbol'>symbol</span><span class='period'>.</span><span class='id identifier rubyid_upcase'>upcase</span><span class='embexpr_end'>}</span><span class='tstring_content'>\n</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_quote_response'>quote_response</span> <span class='op'>+=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Last trade price: </span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span> <span class='id identifier rubyid_last_trade_price_string'>last_trade_price_string</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>\n</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_quote_response'>quote_response</span> <span class='op'>+=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Bid: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_bid_price_string'>bid_price_string</span><span class='embexpr_end'>}</span><span class='tstring_content'> x </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_quote'>quote</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>bid_size</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='embexpr_end'>}</span><span class='tstring_content'>     \n</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_quote_response'>quote_response</span> <span class='op'>+=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Ask: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_ask_price_string'>ask_price_string</span><span class='embexpr_end'>}</span><span class='tstring_content'> x </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_quote'>quote</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>ask_size</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="handle_stock_order-instance_method">
+  
+    #<strong>handle_stock_order</strong>(commands)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+594
+595
+596
+597
+598
+599
+600
+601</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/robinhood_console.rb', line 594</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_handle_stock_order'>handle_stock_order</span><span class='lparen'>(</span><span class='id identifier rubyid_commands'>commands</span><span class='rparen'>)</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_commands'>commands</span><span class='period'>.</span><span class='id identifier rubyid_first'>first</span>
+    <span class='id identifier rubyid_order'>order</span> <span class='op'>=</span> <span class='ivar'>@client</span><span class='period'>.</span><span class='id identifier rubyid_order'>order</span><span class='lparen'>(</span><span class='id identifier rubyid_commands'>commands</span><span class='period'>.</span><span class='id identifier rubyid_first'>first</span><span class='rparen'>)</span>
+    <span class='const'>JSON</span><span class='period'>.</span><span class='id identifier rubyid_pretty_generate'>pretty_generate</span><span class='lparen'>(</span><span class='id identifier rubyid_order'>order</span><span class='rparen'>)</span>
+  <span class='kw'>else</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Error: Must specify an order ID</span><span class='tstring_end'>&quot;</span></span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="handle_stock_orders-instance_method">
+  
+    #<strong>handle_stock_orders</strong>(options)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+444
+445
+446
+447
+448
+449
+450
+451
+452
+453
+454
+455
+456
+457
+458
+459
+460
+461</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/robinhood_console.rb', line 444</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_handle_stock_orders'>handle_stock_orders</span><span class='lparen'>(</span><span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_orders'>orders</span> <span class='op'>=</span> <span class='ivar'>@client</span><span class='period'>.</span><span class='id identifier rubyid_orders'>orders</span><span class='lparen'>(</span><span class='label'>days:</span> <span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='symbol'>:days</span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='label'>symbol:</span> <span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='symbol'>:symbol</span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='label'>last:</span> <span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='symbol'>:last</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_rows'>rows</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_orders'>orders</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_order'>order</span><span class='op'>|</span>
+    <span class='id identifier rubyid_state_color'>state_color</span> <span class='op'>=</span> <span class='kw'>if</span> <span class='id identifier rubyid_order'>order</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>state</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>filled</span><span class='tstring_end'>&quot;</span></span>
+      <span class='symbol'>:green</span>
+    <span class='kw'>elsif</span> <span class='id identifier rubyid_order'>order</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>state</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>cancelled</span><span class='tstring_end'>&quot;</span></span>
+      <span class='symbol'>:red</span>
+    <span class='kw'>end</span>
+    <span class='id identifier rubyid_state'>state</span> <span class='op'>=</span> <span class='op'>!</span><span class='id identifier rubyid_state_color'>state_color</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='op'>?</span> <span class='id identifier rubyid_order'>order</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>state</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_send'>send</span><span class='lparen'>(</span><span class='id identifier rubyid_state_color'>state_color</span><span class='rparen'>)</span> <span class='op'>:</span> <span class='id identifier rubyid_order'>order</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>state</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+    <span class='id identifier rubyid_price'>price</span> <span class='op'>=</span> <span class='id identifier rubyid_order'>order</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>price</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='id identifier rubyid_order'>order</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>stop_price</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='id identifier rubyid_order'>order</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>average_price</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>NA</span><span class='tstring_end'>&quot;</span></span>
+    <span class='id identifier rubyid_price_string'>price_string</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>%.2f</span><span class='tstring_end'>&#39;</span></span> <span class='op'>%</span> <span class='id identifier rubyid_price'>price</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+
+    <span class='id identifier rubyid_rows'>rows</span> <span class='op'>&lt;&lt;</span> <span class='lbracket'>[</span><span class='ivar'>@client</span><span class='period'>.</span><span class='id identifier rubyid_instrument_to_symbol_lookup'>instrument_to_symbol_lookup</span><span class='lparen'>(</span><span class='id identifier rubyid_order'>order</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>instrument</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rparen'>)</span><span class='comma'>,</span> <span class='id identifier rubyid_order'>order</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>id</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>%.2f</span><span class='tstring_end'>&#39;</span></span> <span class='op'>%</span> <span class='id identifier rubyid_order'>order</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>quantity</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_price_string'>price_string</span><span class='comma'>,</span> <span class='id identifier rubyid_order'>order</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>side</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='id identifier rubyid_state'>state</span><span class='rbracket'>]</span>
+  <span class='kw'>end</span>
+  <span class='id identifier rubyid_order_headings'>order_headings</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Symbol</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Order ID</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Quantity</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Price</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Side</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>State</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+  <span class='const'><span class='object_link'><a href="Table.html" title="Table (module)">Table</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Table.html#new-class_method" title="Table.new (method)">new</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_order_headings'>order_headings</span><span class='comma'>,</span> <span class='id identifier rubyid_rows'>rows</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="handle_stream_option-instance_method">
+  
+    #<strong>handle_stream_option</strong>(commands)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+315
+316
+317
+318
+319
+320
+321
+322
+323
+324
+325
+326
+327
+328
+329
+330
+331
+332
+333
+334
+335
+336
+337
+338
+339
+340
+341
+342
+343
+344
+345
+346
+347
+348
+349
+350
+351
+352
+353
+354
+355
+356
+357
+358
+359
+360
+361
+362
+363
+364
+365
+366
+367
+368
+369
+370
+371
+372
+373
+374
+375
+376
+377
+378
+379
+380
+381
+382
+383
+384
+385
+386
+387
+388
+389
+390
+391
+392
+393
+394
+395
+396
+397
+398
+399
+400
+401
+402
+403
+404
+405
+406
+407
+408
+409
+410
+411
+412
+413
+414
+415
+416
+417
+418
+419
+420
+421
+422
+423
+424
+425
+426
+427
+428</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/robinhood_console.rb', line 315</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_handle_stream_option'>handle_stream_option</span><span class='lparen'>(</span><span class='id identifier rubyid_commands'>commands</span><span class='rparen'>)</span>
+  <span class='kw'>return</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Error: Must specify a symbol</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>unless</span> <span class='id identifier rubyid_commands'>commands</span><span class='period'>.</span><span class='id identifier rubyid_first'>first</span>
+  <span class='id identifier rubyid_symbol'>symbol</span> <span class='op'>=</span> <span class='id identifier rubyid_commands'>commands</span><span class='period'>.</span><span class='id identifier rubyid_first'>first</span>
+  <span class='id identifier rubyid_symbol'>symbol</span><span class='period'>.</span><span class='id identifier rubyid_upcase!'>upcase!</span>
+  <span class='id identifier rubyid_chain_id'>chain_id</span><span class='comma'>,</span> <span class='id identifier rubyid_expiration_dates'>expiration_dates</span> <span class='op'>=</span> <span class='ivar'>@client</span><span class='period'>.</span><span class='id identifier rubyid_get_chain_and_expirations'>get_chain_and_expirations</span><span class='lparen'>(</span><span class='id identifier rubyid_symbol'>symbol</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_expiration_headings'>expiration_headings</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Index</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Expiration</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_expiration_rows'>expiration_rows</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_expiration_dates'>expiration_dates</span><span class='period'>.</span><span class='id identifier rubyid_each_with_index'>each_with_index</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_expiration_date'>expiration_date</span><span class='comma'>,</span> <span class='id identifier rubyid_index'>index</span><span class='op'>|</span>
+    <span class='id identifier rubyid_expiration_rows'>expiration_rows</span> <span class='op'>&lt;&lt;</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_index'>index</span> <span class='op'>+</span> <span class='int'>1</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_expiration_date'>expiration_date</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+  <span class='kw'>end</span>
+  <span class='id identifier rubyid_expiration_table'>expiration_table</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="Table.html" title="Table (module)">Table</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Table.html#new-class_method" title="Table.new (method)">new</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_expiration_headings'>expiration_headings</span><span class='comma'>,</span> <span class='id identifier rubyid_expiration_rows'>expiration_rows</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_puts'>puts</span> <span class='id identifier rubyid_expiration_table'>expiration_table</span>
+  <span class='id identifier rubyid_print'>print</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>\nSelect an expiration date: </span><span class='tstring_end'>&quot;</span></span>
+
+  <span class='comment'># Get expiration date
+</span>  <span class='id identifier rubyid_expiration_index'>expiration_index</span> <span class='op'>=</span> <span class='id identifier rubyid_gets'>gets</span><span class='period'>.</span><span class='id identifier rubyid_chomp'>chomp</span>
+  <span class='id identifier rubyid_expiration_date'>expiration_date</span> <span class='op'>=</span> <span class='id identifier rubyid_expiration_dates'>expiration_dates</span><span class='lbracket'>[</span><span class='id identifier rubyid_expiration_index'>expiration_index</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span> <span class='op'>-</span> <span class='int'>1</span><span class='rbracket'>]</span>
+
+  <span class='comment'>#Get type
+</span>  <span class='id identifier rubyid_type_headings'>type_headings</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Index</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Type</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_type_rows'>type_rows</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_type_rows'>type_rows</span> <span class='op'>&lt;&lt;</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>1</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Call</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_type_rows'>type_rows</span> <span class='op'>&lt;&lt;</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>2</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Put</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+
+  <span class='id identifier rubyid_type_table'>type_table</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="Table.html" title="Table (module)">Table</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Table.html#new-class_method" title="Table.new (method)">new</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_type_headings'>type_headings</span><span class='comma'>,</span> <span class='id identifier rubyid_type_rows'>type_rows</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_puts'>puts</span> <span class='id identifier rubyid_type_table'>type_table</span>
+
+  <span class='id identifier rubyid_print'>print</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>\nSelect a type: </span><span class='tstring_end'>&quot;</span></span>
+
+  <span class='id identifier rubyid_type'>type</span> <span class='op'>=</span> <span class='id identifier rubyid_gets'>gets</span><span class='period'>.</span><span class='id identifier rubyid_chomp'>chomp</span>
+  <span class='id identifier rubyid_type'>type</span> <span class='op'>=</span> <span class='kw'>if</span> <span class='id identifier rubyid_type'>type</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>1</span><span class='tstring_end'>&quot;</span></span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>call</span><span class='tstring_end'>&quot;</span></span>
+  <span class='kw'>else</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>put</span><span class='tstring_end'>&quot;</span></span>
+  <span class='kw'>end</span>
+
+  <span class='id identifier rubyid_instruments'>instruments</span> <span class='op'>=</span> <span class='ivar'>@client</span><span class='period'>.</span><span class='id identifier rubyid_get_option_instruments'>get_option_instruments</span><span class='lparen'>(</span><span class='id identifier rubyid_type'>type</span><span class='comma'>,</span> <span class='id identifier rubyid_expiration_date'>expiration_date</span><span class='comma'>,</span> <span class='id identifier rubyid_chain_id'>chain_id</span><span class='rparen'>)</span>
+
+  <span class='comment'># Prompt for which one
+</span>  <span class='id identifier rubyid_instrument_headings'>instrument_headings</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Index</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Strike</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_instrument_rows'>instrument_rows</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_instruments'>instruments</span> <span class='op'>=</span> <span class='id identifier rubyid_instruments'>instruments</span><span class='period'>.</span><span class='id identifier rubyid_sort'>sort</span> <span class='lbrace'>{</span><span class='op'>|</span><span class='id identifier rubyid_a'>a</span><span class='comma'>,</span><span class='id identifier rubyid_b'>b</span><span class='op'>|</span> <span class='id identifier rubyid_a'>a</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>strike_price</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span> <span class='op'>&lt;=&gt;</span> <span class='id identifier rubyid_b'>b</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>strike_price</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span><span class='rbrace'>}</span>
+  <span class='id identifier rubyid_instruments'>instruments</span><span class='period'>.</span><span class='id identifier rubyid_each_with_index'>each_with_index</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_instrument'>instrument</span><span class='comma'>,</span> <span class='id identifier rubyid_index'>index</span><span class='op'>|</span>
+    <span class='id identifier rubyid_instrument_rows'>instrument_rows</span> <span class='op'>&lt;&lt;</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_index'>index</span> <span class='op'>+</span> <span class='int'>1</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>%.2f</span><span class='tstring_end'>&#39;</span></span> <span class='op'>%</span> <span class='id identifier rubyid_instrument'>instrument</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>strike_price</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+  <span class='kw'>end</span>
+
+  <span class='id identifier rubyid_instrument_table'>instrument_table</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="Table.html" title="Table (module)">Table</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Table.html#new-class_method" title="Table.new (method)">new</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_instrument_headings'>instrument_headings</span><span class='comma'>,</span> <span class='id identifier rubyid_instrument_rows'>instrument_rows</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_puts'>puts</span> <span class='id identifier rubyid_instrument_table'>instrument_table</span>
+
+  <span class='id identifier rubyid_print'>print</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>\nSelect a strike: </span><span class='tstring_end'>&quot;</span></span>
+
+  <span class='id identifier rubyid_instrument_index'>instrument_index</span> <span class='op'>=</span> <span class='id identifier rubyid_gets'>gets</span><span class='period'>.</span><span class='id identifier rubyid_chomp'>chomp</span>
+  <span class='id identifier rubyid_formatted_strike_price'>formatted_strike_price</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>%.2f</span><span class='tstring_end'>&#39;</span></span> <span class='op'>%</span> <span class='id identifier rubyid_instruments'>instruments</span><span class='lbracket'>[</span><span class='id identifier rubyid_instrument_index'>instrument_index</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span> <span class='op'>-</span> <span class='int'>1</span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>strike_price</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_instrument_id'>instrument_id</span> <span class='op'>=</span> <span class='id identifier rubyid_instruments'>instruments</span><span class='lbracket'>[</span><span class='id identifier rubyid_instrument_index'>instrument_index</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span> <span class='op'>-</span> <span class='int'>1</span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>id</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+
+  <span class='comment'># Get the quote for it
+</span>
+  <span class='const'>Thread</span><span class='op'>::</span><span class='id identifier rubyid_abort_on_exception'>abort_on_exception</span> <span class='op'>=</span> <span class='kw'>true</span>
+  <span class='id identifier rubyid_puts'>puts</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Streaming live quotes. Press enter to stop...\n\n</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_stream_quote_thread'>stream_quote_thread</span> <span class='op'>=</span> <span class='const'>Thread</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span> <span class='kw'>do</span>
+    <span class='id identifier rubyid_previous_last_trade_price'>previous_last_trade_price</span> <span class='op'>=</span> <span class='int'>0</span>
+    <span class='id identifier rubyid_previous_bid_price'>previous_bid_price</span> <span class='op'>=</span> <span class='int'>0</span>
+    <span class='id identifier rubyid_previous_ask_price'>previous_ask_price</span> <span class='op'>=</span> <span class='int'>0</span>
+    <span class='id identifier rubyid_loop'>loop</span> <span class='kw'>do</span>
+      <span class='id identifier rubyid_quote'>quote</span> <span class='op'>=</span> <span class='ivar'>@client</span><span class='period'>.</span><span class='id identifier rubyid_get_option_quote_by_id'>get_option_quote_by_id</span><span class='lparen'>(</span><span class='id identifier rubyid_instrument_id'>instrument_id</span><span class='rparen'>)</span>
+      <span class='id identifier rubyid_last_trade_price'>last_trade_price</span> <span class='op'>=</span> <span class='id identifier rubyid_quote'>quote</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>last_trade_price</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span>
+      <span class='id identifier rubyid_bid_price'>bid_price</span> <span class='op'>=</span> <span class='id identifier rubyid_quote'>quote</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>bid_price</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span>
+      <span class='id identifier rubyid_ask_price'>ask_price</span> <span class='op'>=</span> <span class='id identifier rubyid_quote'>quote</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>ask_price</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span>
+
+      <span class='id identifier rubyid_last_trade_price_color'>last_trade_price_color</span> <span class='op'>=</span> <span class='kw'>if</span> <span class='id identifier rubyid_last_trade_price'>last_trade_price</span> <span class='op'>&gt;</span> <span class='id identifier rubyid_previous_last_trade_price'>previous_last_trade_price</span>
+        <span class='symbol'>:green</span>
+      <span class='kw'>elsif</span> <span class='id identifier rubyid_last_trade_price'>last_trade_price</span> <span class='op'>&lt;</span> <span class='id identifier rubyid_previous_last_trade_price'>previous_last_trade_price</span>
+        <span class='symbol'>:red</span>
+      <span class='kw'>end</span>
+
+      <span class='id identifier rubyid_bid_price_color'>bid_price_color</span> <span class='op'>=</span> <span class='kw'>if</span> <span class='id identifier rubyid_bid_price'>bid_price</span> <span class='op'>&gt;</span> <span class='id identifier rubyid_previous_bid_price'>previous_bid_price</span>
+        <span class='symbol'>:green</span>
+      <span class='kw'>elsif</span> <span class='id identifier rubyid_bid_price'>bid_price</span> <span class='op'>&lt;</span> <span class='id identifier rubyid_previous_bid_price'>previous_bid_price</span>
+        <span class='symbol'>:red</span>
+      <span class='kw'>end</span>
+
+      <span class='id identifier rubyid_ask_price_color'>ask_price_color</span> <span class='op'>=</span> <span class='kw'>if</span> <span class='id identifier rubyid_ask_price'>ask_price</span> <span class='op'>&gt;</span> <span class='id identifier rubyid_previous_ask_price'>previous_ask_price</span>
+        <span class='symbol'>:green</span>
+      <span class='kw'>elsif</span> <span class='id identifier rubyid_ask_price'>ask_price</span> <span class='op'>&lt;</span> <span class='id identifier rubyid_previous_ask_price'>previous_ask_price</span>
+        <span class='symbol'>:red</span>
+      <span class='kw'>end</span>
+
+      <span class='id identifier rubyid_last_trade_price_string'>last_trade_price_string</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="FormatHelpers.html" title="FormatHelpers (module)">FormatHelpers</a></span></span><span class='period'>.</span><span class='id identifier rubyid_format_float'><span class='object_link'><a href="FormatHelpers.html#format_float-class_method" title="FormatHelpers.format_float (method)">format_float</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_last_trade_price'>last_trade_price</span><span class='comma'>,</span> <span class='label'>color:</span> <span class='id identifier rubyid_last_trade_price_color'>last_trade_price_color</span><span class='rparen'>)</span>
+      <span class='id identifier rubyid_bid_price_string'>bid_price_string</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="FormatHelpers.html" title="FormatHelpers (module)">FormatHelpers</a></span></span><span class='period'>.</span><span class='id identifier rubyid_format_float'><span class='object_link'><a href="FormatHelpers.html#format_float-class_method" title="FormatHelpers.format_float (method)">format_float</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_bid_price'>bid_price</span><span class='comma'>,</span> <span class='label'>color:</span> <span class='id identifier rubyid_bid_price_color'>bid_price_color</span><span class='rparen'>)</span>
+      <span class='id identifier rubyid_ask_price_string'>ask_price_string</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="FormatHelpers.html" title="FormatHelpers (module)">FormatHelpers</a></span></span><span class='period'>.</span><span class='id identifier rubyid_format_float'><span class='object_link'><a href="FormatHelpers.html#format_float-class_method" title="FormatHelpers.format_float (method)">format_float</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_ask_price'>ask_price</span><span class='comma'>,</span> <span class='label'>color:</span> <span class='id identifier rubyid_ask_price_color'>ask_price_color</span><span class='rparen'>)</span>
+
+      <span class='id identifier rubyid_print'>print</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>  </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_symbol'>symbol</span><span class='embexpr_end'>}</span><span class='tstring_content'> $</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_formatted_strike_price'>formatted_strike_price</span><span class='embexpr_end'>}</span><span class='tstring_content'> </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_type'>type</span><span class='period'>.</span><span class='id identifier rubyid_capitalize'>capitalize</span><span class='embexpr_end'>}</span><span class='tstring_content'> </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_expiration_date'>expiration_date</span><span class='embexpr_end'>}</span><span class='tstring_content'>\n</span><span class='tstring_end'>&quot;</span></span>
+      <span class='id identifier rubyid_print'>print</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Last trade price: </span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span> <span class='id identifier rubyid_last_trade_price_string'>last_trade_price_string</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>\n</span><span class='tstring_end'>&quot;</span></span>
+      <span class='id identifier rubyid_print'>print</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Bid: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_bid_price_string'>bid_price_string</span><span class='embexpr_end'>}</span><span class='tstring_content'> x </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_quote'>quote</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>bid_size</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='embexpr_end'>}</span><span class='tstring_content'>     \n</span><span class='tstring_end'>&quot;</span></span>
+      <span class='id identifier rubyid_print'>print</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Ask: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_ask_price_string'>ask_price_string</span><span class='embexpr_end'>}</span><span class='tstring_content'> x </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_quote'>quote</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>ask_size</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='embexpr_end'>}</span><span class='tstring_content'>     </span><span class='tstring_end'>&quot;</span></span>
+      <span class='id identifier rubyid_print'>print</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>\033[3A</span><span class='tstring_end'>&quot;</span></span>
+      <span class='id identifier rubyid_print'>print</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>\r</span><span class='tstring_end'>&quot;</span></span>
+      <span class='const'>STDOUT</span><span class='period'>.</span><span class='id identifier rubyid_flush'>flush</span>
+
+      <span class='id identifier rubyid_previous_last_trade_price'>previous_last_trade_price</span> <span class='op'>=</span> <span class='id identifier rubyid_last_trade_price'>last_trade_price</span>
+      <span class='id identifier rubyid_previous_bid_price'>previous_bid_price</span> <span class='op'>=</span> <span class='id identifier rubyid_bid_price'>bid_price</span>
+      <span class='id identifier rubyid_previous_ask_price'>previous_ask_price</span> <span class='op'>=</span> <span class='id identifier rubyid_ask_price'>ask_price</span>
+      <span class='id identifier rubyid_sleep'>sleep</span> <span class='int'>1</span>
+    <span class='kw'>end</span>
+
+  <span class='kw'>end</span>  <span class='comment'># Wait for keyboard input then halt the tread
+</span>
+  <span class='id identifier rubyid_gets'>gets</span>
+  <span class='id identifier rubyid_stream_quote_thread'>stream_quote_thread</span><span class='period'>.</span><span class='id identifier rubyid_kill'>kill</span>  <span class='comment'># Move the cursor back down so you don&#39;t type over the quote
+</span>
+  <span class='id identifier rubyid_print'>print</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>\033[3B</span><span class='tstring_end'>&quot;</span></span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_end'>&quot;</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="handle_stream_stock-instance_method">
+  
+    #<strong>handle_stream_stock</strong>(commands)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252
+253
+254
+255</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/robinhood_console.rb', line 198</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_handle_stream_stock'>handle_stream_stock</span><span class='lparen'>(</span><span class='id identifier rubyid_commands'>commands</span><span class='rparen'>)</span>
+  <span class='kw'>return</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Error: Must specify a symbol</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>unless</span> <span class='id identifier rubyid_commands'>commands</span><span class='period'>.</span><span class='id identifier rubyid_first'>first</span>
+  <span class='id identifier rubyid_symbol'>symbol</span> <span class='op'>=</span> <span class='id identifier rubyid_commands'>commands</span><span class='period'>.</span><span class='id identifier rubyid_first'>first</span>
+  <span class='const'>Thread</span><span class='op'>::</span><span class='id identifier rubyid_abort_on_exception'>abort_on_exception</span> <span class='op'>=</span> <span class='kw'>true</span>
+  <span class='id identifier rubyid_puts'>puts</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Streaming live quotes. Press enter to stop...\n\n</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_stream_quote_thread'>stream_quote_thread</span> <span class='op'>=</span> <span class='const'>Thread</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span> <span class='kw'>do</span>
+    <span class='id identifier rubyid_previous_last_trade_price'>previous_last_trade_price</span> <span class='op'>=</span> <span class='int'>0</span>
+    <span class='id identifier rubyid_previous_bid_price'>previous_bid_price</span> <span class='op'>=</span> <span class='int'>0</span>
+    <span class='id identifier rubyid_previous_ask_price'>previous_ask_price</span> <span class='op'>=</span> <span class='int'>0</span>
+    <span class='id identifier rubyid_loop'>loop</span> <span class='kw'>do</span>
+      <span class='id identifier rubyid_quote'>quote</span> <span class='op'>=</span> <span class='ivar'>@client</span><span class='period'>.</span><span class='id identifier rubyid_quote'>quote</span><span class='lparen'>(</span><span class='id identifier rubyid_symbol'>symbol</span><span class='rparen'>)</span>
+      <span class='id identifier rubyid_last_trade_price'>last_trade_price</span> <span class='op'>=</span> <span class='id identifier rubyid_quote'>quote</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>last_trade_price</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span>
+      <span class='id identifier rubyid_bid_price'>bid_price</span> <span class='op'>=</span> <span class='id identifier rubyid_quote'>quote</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>bid_price</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span>
+      <span class='id identifier rubyid_ask_price'>ask_price</span> <span class='op'>=</span> <span class='id identifier rubyid_quote'>quote</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>ask_price</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span>
+
+      <span class='id identifier rubyid_last_trade_price_color'>last_trade_price_color</span> <span class='op'>=</span> <span class='kw'>if</span> <span class='id identifier rubyid_last_trade_price'>last_trade_price</span> <span class='op'>&gt;</span> <span class='id identifier rubyid_previous_last_trade_price'>previous_last_trade_price</span>
+        <span class='symbol'>:green</span>
+      <span class='kw'>elsif</span> <span class='id identifier rubyid_last_trade_price'>last_trade_price</span> <span class='op'>&lt;</span> <span class='id identifier rubyid_previous_last_trade_price'>previous_last_trade_price</span>
+        <span class='symbol'>:red</span>
+      <span class='kw'>end</span>
+
+      <span class='id identifier rubyid_bid_price_color'>bid_price_color</span> <span class='op'>=</span> <span class='kw'>if</span> <span class='id identifier rubyid_bid_price'>bid_price</span> <span class='op'>&gt;</span> <span class='id identifier rubyid_previous_bid_price'>previous_bid_price</span>
+        <span class='symbol'>:green</span>
+      <span class='kw'>elsif</span> <span class='id identifier rubyid_bid_price'>bid_price</span> <span class='op'>&lt;</span> <span class='id identifier rubyid_previous_bid_price'>previous_bid_price</span>
+        <span class='symbol'>:red</span>
+      <span class='kw'>end</span>
+
+      <span class='id identifier rubyid_ask_price_color'>ask_price_color</span> <span class='op'>=</span> <span class='kw'>if</span> <span class='id identifier rubyid_ask_price'>ask_price</span> <span class='op'>&gt;</span> <span class='id identifier rubyid_previous_ask_price'>previous_ask_price</span>
+        <span class='symbol'>:green</span>
+      <span class='kw'>elsif</span> <span class='id identifier rubyid_ask_price'>ask_price</span> <span class='op'>&lt;</span> <span class='id identifier rubyid_previous_ask_price'>previous_ask_price</span>
+        <span class='symbol'>:red</span>
+      <span class='kw'>end</span>
+
+      <span class='id identifier rubyid_last_trade_price_string'>last_trade_price_string</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="FormatHelpers.html" title="FormatHelpers (module)">FormatHelpers</a></span></span><span class='period'>.</span><span class='id identifier rubyid_format_float'><span class='object_link'><a href="FormatHelpers.html#format_float-class_method" title="FormatHelpers.format_float (method)">format_float</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_last_trade_price'>last_trade_price</span><span class='comma'>,</span> <span class='label'>color:</span> <span class='id identifier rubyid_last_trade_price_color'>last_trade_price_color</span><span class='rparen'>)</span>
+      <span class='id identifier rubyid_bid_price_string'>bid_price_string</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="FormatHelpers.html" title="FormatHelpers (module)">FormatHelpers</a></span></span><span class='period'>.</span><span class='id identifier rubyid_format_float'><span class='object_link'><a href="FormatHelpers.html#format_float-class_method" title="FormatHelpers.format_float (method)">format_float</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_bid_price'>bid_price</span><span class='comma'>,</span> <span class='label'>color:</span> <span class='id identifier rubyid_bid_price_color'>bid_price_color</span><span class='rparen'>)</span>
+      <span class='id identifier rubyid_ask_price_string'>ask_price_string</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="FormatHelpers.html" title="FormatHelpers (module)">FormatHelpers</a></span></span><span class='period'>.</span><span class='id identifier rubyid_format_float'><span class='object_link'><a href="FormatHelpers.html#format_float-class_method" title="FormatHelpers.format_float (method)">format_float</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_ask_price'>ask_price</span><span class='comma'>,</span> <span class='label'>color:</span> <span class='id identifier rubyid_ask_price_color'>ask_price_color</span><span class='rparen'>)</span>
+
+      <span class='id identifier rubyid_print'>print</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>  </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_symbol'>symbol</span><span class='period'>.</span><span class='id identifier rubyid_upcase'>upcase</span><span class='embexpr_end'>}</span><span class='tstring_content'>\n</span><span class='tstring_end'>&quot;</span></span>
+      <span class='id identifier rubyid_print'>print</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Last trade price: </span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span> <span class='id identifier rubyid_last_trade_price_string'>last_trade_price_string</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>\n</span><span class='tstring_end'>&quot;</span></span>
+      <span class='id identifier rubyid_print'>print</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Bid: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_bid_price_string'>bid_price_string</span><span class='embexpr_end'>}</span><span class='tstring_content'> x </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_quote'>quote</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>bid_size</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='embexpr_end'>}</span><span class='tstring_content'>     \n</span><span class='tstring_end'>&quot;</span></span>
+      <span class='id identifier rubyid_print'>print</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Ask: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_ask_price_string'>ask_price_string</span><span class='embexpr_end'>}</span><span class='tstring_content'> x </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_quote'>quote</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>ask_size</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='embexpr_end'>}</span><span class='tstring_content'>     </span><span class='tstring_end'>&quot;</span></span>
+      <span class='id identifier rubyid_print'>print</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>\033[3A</span><span class='tstring_end'>&quot;</span></span>
+      <span class='id identifier rubyid_print'>print</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>\r</span><span class='tstring_end'>&quot;</span></span>
+      <span class='const'>STDOUT</span><span class='period'>.</span><span class='id identifier rubyid_flush'>flush</span>
+
+      <span class='id identifier rubyid_previous_last_trade_price'>previous_last_trade_price</span> <span class='op'>=</span> <span class='id identifier rubyid_last_trade_price'>last_trade_price</span>
+      <span class='id identifier rubyid_previous_bid_price'>previous_bid_price</span> <span class='op'>=</span> <span class='id identifier rubyid_bid_price'>bid_price</span>
+      <span class='id identifier rubyid_previous_ask_price'>previous_ask_price</span> <span class='op'>=</span> <span class='id identifier rubyid_ask_price'>ask_price</span>
+      <span class='id identifier rubyid_sleep'>sleep</span> <span class='int'>1</span>
+    <span class='kw'>end</span>
+  <span class='kw'>end</span>  <span class='comment'># Wait for keyboard input then halt the tread
+</span>
+  <span class='id identifier rubyid_gets'>gets</span>
+  <span class='id identifier rubyid_stream_quote_thread'>stream_quote_thread</span><span class='period'>.</span><span class='id identifier rubyid_kill'>kill</span>  <span class='comment'># Move the cursor back down so you don&#39;t type over the quote
+</span>
+  <span class='id identifier rubyid_print'>print</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>\033[3B</span><span class='tstring_end'>&quot;</span></span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_end'>&quot;</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="handle_user-instance_method">
+  
+    #<strong>handle_user</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+276
+277
+278
+279</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/robinhood_console.rb', line 276</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_handle_user'>handle_user</span>
+  <span class='id identifier rubyid_user'>user</span> <span class='op'>=</span> <span class='ivar'>@client</span><span class='period'>.</span><span class='id identifier rubyid_user'>user</span>
+  <span class='const'>JSON</span><span class='period'>.</span><span class='id identifier rubyid_pretty_generate'>pretty_generate</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="help-instance_method">
+  
+    #<strong>help</strong>  &#x21d2; <tt>String</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Help text for the console</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The help text detailing all the commands available</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/robinhood_console.rb', line 24</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_help'>help</span>
+  <span class='heredoc_beg'>&lt;&lt;-HELP_TEXT</span>
+<span class='tstring_content'>
+  --------------------Robinhood Console---------------------
+  buy-stock --symbol SYMBOL --quantity QUANTITY --price PRICE
+  sell-stock --symbol SYMBOL --quantity QUANTITY --price PRICE
+
+  buy-option &lt;SYMBOL&gt;
+
+  stock-orders --days DAYS --symbol SYMBOL --last LAST
+  option-orders --last LAST
+
+  stock-order &lt;ID&gt;
+  option-order &lt;ID&gt;
+
+  cancel-stock-order &lt;ID || all&gt;
+  cancel-option-order &lt;ID || all&gt;
+
+  stream-stock &lt;SYMBOL&gt; - stream equity quotes
+  stream-option &lt;SYMBOL&gt; - stream option quotes
+  quote &lt;SYMBOL&gt; - gets the current price of the symbol
+
+  portfolio - print portfolio
+  user - print the currently authenticated user
+  account - fetch the currently authenticated user&#39;s accounts
+  backup - store historical data for the past week for your watchlist
+
+  get &lt;URL&gt; - makes an authenticated GET request and prints the output
+
+  help - print this menu
+  exit - exit the program
+  -----------------------------------------------------------
+</span><span class='heredoc_end'>  HELP_TEXT
+</span><span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="initialize_client-instance_method">
+  
+    #<strong>initialize_client</strong>  &#x21d2; <tt><span class='object_link'><a href="RobinhoodClient.html" title="RobinhoodClient (class)">RobinhoodClient</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Prompt the user for credentials and initialize the Robinhood client</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="RobinhoodClient.html" title="RobinhoodClient (class)">RobinhoodClient</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Returns the RobinhoodClient instance if the credentials were valid</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+62
+63
+64</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/robinhood_console.rb', line 62</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_initialize_client'>initialize_client</span>
+  <span class='ivar'>@client</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="RobinhoodClient.html" title="RobinhoodClient (class)">RobinhoodClient</a></span></span><span class='period'>.</span><span class='id identifier rubyid_interactively_create_client'><span class='object_link'><a href="RobinhoodClient.html#interactively_create_client-class_method" title="RobinhoodClient.interactively_create_client (method)">interactively_create_client</a></span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="menu_loop-instance_method">
+  
+    #<strong>menu_loop</strong>  &#x21d2; <tt>nil</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Begin input loop</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>nil</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Loops infinitely until user exits</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/robinhood_console.rb', line 69</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_menu_loop'>menu_loop</span>
+
+  <span class='kw'>begin</span>
+    <span class='id identifier rubyid_loop'>loop</span> <span class='kw'>do</span>
+      <span class='id identifier rubyid_handle_menu_input'>handle_menu_input</span><span class='lparen'>(</span><span class='rparen'>)</span>
+    <span class='kw'>end</span>
+  <span class='kw'>rescue</span> <span class='const'>Interrupt</span>
+    <span class='id identifier rubyid_puts'>puts</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>\nExiting...</span><span class='tstring_end'>&quot;</span></span>
+    <span class='id identifier rubyid_exit'>exit</span> <span class='int'>1</span>
+  <span class='kw'>rescue</span> <span class='const'>SocketError</span><span class='comma'>,</span> <span class='const'>Net</span><span class='op'>::</span><span class='const'>OpenTimeout</span>
+    <span class='id identifier rubyid_puts'>puts</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Error making request: Check your internet connection.</span><span class='tstring_end'>&quot;</span></span>
+    <span class='id identifier rubyid_menu_loop'>menu_loop</span><span class='lparen'>(</span><span class='rparen'>)</span>
+  <span class='kw'>rescue</span> <span class='const'>OptionParser</span><span class='op'>::</span><span class='const'>InvalidOption</span>
+    <span class='id identifier rubyid_puts'>puts</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Error: Invalid option used.</span><span class='tstring_end'>&quot;</span></span>
+    <span class='id identifier rubyid_menu_loop'>menu_loop</span><span class='lparen'>(</span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="print_help_text-instance_method">
+  
+    #<strong>print_help_text</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+17
+18
+19</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/robinhood_console.rb', line 17</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_print_help_text'>print_help_text</span>
+  <span class='id identifier rubyid_puts'>puts</span> <span class='id identifier rubyid_help'>help</span><span class='lparen'>(</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Sat Apr  4 15:49:43 2020 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.20 (ruby-2.7.1).
+</div>
+
+    </div>
+  </body>
+</html>

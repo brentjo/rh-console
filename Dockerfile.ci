@@ -1,0 +1,12 @@
+FROM ruby:2.7.1
+
+RUN mkdir /rh-console
+WORKDIR /rh-console
+COPY Gemfile /rh-console/Gemfile
+COPY Gemfile.lock /rh-console/Gemfile.lock
+RUN gem install bundler:2.0.2
+RUN bundle install
+COPY . /rh-console
+
+# Start the main process
+CMD ["rake", "test"]

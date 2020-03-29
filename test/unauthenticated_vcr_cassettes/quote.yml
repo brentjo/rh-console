@@ -1,0 +1,40 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.robinhood.com/quotes/FB/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/json
+      User-Agent:
+      - Ruby
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 14 Sep 2018 05:16:13 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '289'
+      Connection:
+      - keep-alive
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ask_price":"161.420000","ask_size":200,"bid_price":"161.330000","bid_size":10300,"last_trade_price":"161.360000","last_extended_hours_trade_price":"161.380000","previous_close":"162.000000","adjusted_previous_close":"162.000000","previous_close_date":"2018-09-12","symbol":"FB","trading_halted":false,"has_traded":true,"last_trade_price_source":"consolidated","updated_at":"2018-09-13T23:59:54Z","instrument":"https://api.robinhood.com/instruments/ebab2398-028d-4939-9f1d-13bf38f81c50/"}'
+    http_version: 
+  recorded_at: Fri, 14 Sep 2018 05:16:13 GMT
+recorded_with: VCR 4.0.0

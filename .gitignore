@@ -1,0 +1,3 @@
+.yardoc
+test/authenticated_vcr_cassettes/*
+!test/authenticated_vcr_cassettes/.keep
