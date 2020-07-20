@@ -188,6 +188,22 @@
         </dt>
         <dd><pre class="code"><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://api.robinhood.com/orders/</span><span class='tstring_end'>&quot;</span></span><span class='period'>.</span><span class='id identifier rubyid_freeze'>freeze</span></pre></dd>
       
+        <dt id="ROBINHOOD_PORTFOLIO_ROUTE-constant" class="">ROBINHOOD_PORTFOLIO_ROUTE =
+          <div class="docstring">
+  <div class="discussion">
+    
+<p>Route that returns the authenticated user&#39;s portfolio</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+        </dt>
+        <dd><pre class="code"><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://api.robinhood.com/portfolios/</span><span class='tstring_end'>&quot;</span></span><span class='period'>.</span><span class='id identifier rubyid_freeze'>freeze</span></pre></dd>
+      
         <dt id="ROBINHOOD_DEFAULT_WATCHLIST-constant" class="">ROBINHOOD_DEFAULT_WATCHLIST =
           <div class="docstring">
   <div class="discussion">
@@ -203,6 +219,22 @@
 </div>
         </dt>
         <dd><pre class="code"><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://api.robinhood.com/watchlists/Default/</span><span class='tstring_end'>&quot;</span></span><span class='period'>.</span><span class='id identifier rubyid_freeze'>freeze</span></pre></dd>
+      
+        <dt id="ROBINHOOD_POSITIONS_ROUTE-constant" class="">ROBINHOOD_POSITIONS_ROUTE =
+          <div class="docstring">
+  <div class="discussion">
+    
+<p>Route to fetch the authenticated user&#39;s stock positions</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+        </dt>
+        <dd><pre class="code"><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://api.robinhood.com/positions/</span><span class='tstring_end'>&quot;</span></span><span class='period'>.</span><span class='id identifier rubyid_freeze'>freeze</span></pre></dd>
       
         <dt id="ROBINHOOD_OPTIONS_POSITIONS_ROUTE-constant" class="">ROBINHOOD_OPTIONS_POSITIONS_ROUTE =
           <div class="docstring">
@@ -725,30 +757,6 @@
   
     <span class="summary_desc"><div class='inline'>
 <p>Cancel an order.</p>
-</div></span>
-  
-</li>
-
-      
-        <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="#commarize-instance_method" title="#commarize (instance method)">#<strong>commarize</strong>(value)  &#x21d2; String </a>
-    
-
-    
-  </span>
-  
-  
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'>
-<p>Add commas to a dollar amount.</p>
 </div></span>
   
 </li>
@@ -1560,10 +1568,6 @@
       <pre class="lines">
 
 
-73
-74
-75
-76
 77
 78
 79
@@ -1596,10 +1600,14 @@
 106
 107
 108
-109</pre>
+109
+110
+111
+112
+113</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 73</span>
+      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 77</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='label'>username:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>password:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>mfa_code:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>unauthenticated:</span> <span class='kw'>false</span><span class='comma'>,</span> <span class='label'>jwt:</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 
@@ -1702,10 +1710,6 @@
       <pre class="lines">
 
 
-116
-117
-118
-119
 120
 121
 122
@@ -1728,14 +1732,18 @@
 139
 140
 141
-142</pre>
+142
+143
+144
+145
+146</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 116</span>
+      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 120</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_interactively_create_client'>interactively_create_client</span>
   <span class='id identifier rubyid_print'>print</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Enter your username: </span><span class='tstring_end'>&quot;</span></span>
-  <span class='id identifier rubyid_username'>username</span> <span class='op'>=</span> <span class='id identifier rubyid_gets'>gets</span><span class='period'>.</span><span class='id identifier rubyid_chomp'>chomp</span>
+  <span class='id identifier rubyid_username'>username</span> <span class='op'>=</span> <span class='const'>STDIN</span><span class='period'>.</span><span class='id identifier rubyid_gets'>gets</span><span class='period'>.</span><span class='id identifier rubyid_chomp'>chomp</span>
   <span class='id identifier rubyid_print'>print</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Password: </span><span class='tstring_end'>&quot;</span></span>
   <span class='id identifier rubyid_password'>password</span> <span class='op'>=</span> <span class='const'>STDIN</span><span class='period'>.</span><span class='id identifier rubyid_noecho'>noecho</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='symbol'>:gets</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_chomp'>chomp</span>
 
@@ -1786,12 +1794,12 @@
       <pre class="lines">
 
 
-678
-679
-680</pre>
+684
+685
+686</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 678</span>
+      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 684</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_access_token'>access_token</span>
   <span class='ivar'>@access_token</span>
@@ -1816,14 +1824,14 @@
       <pre class="lines">
 
 
-537
-538
-539
-540
-541</pre>
+543
+544
+545
+546
+547</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 537</span>
+      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 543</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_account'>account</span>
   <span class='id identifier rubyid_user_accounts'>user_accounts</span> <span class='op'>=</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_accounts'>accounts</span><span class='lparen'>(</span><span class='rparen'>)</span>
@@ -1887,12 +1895,12 @@
       <pre class="lines">
 
 
-215
-216
-217</pre>
+219
+220
+221</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 215</span>
+      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 219</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_accounts'>accounts</span>
   <span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='const'><span class='object_link'><a href="#ROBINHOOD_ACCOUNTS_ROUTE-constant" title="RobinhoodClient::ROBINHOOD_ACCOUNTS_ROUTE (constant)">ROBINHOOD_ACCOUNTS_ROUTE</a></span></span><span class='comma'>,</span> <span class='label'>return_as_json:</span> <span class='kw'>true</span><span class='rparen'>)</span>
@@ -1954,12 +1962,12 @@
       <pre class="lines">
 
 
-548
-549
-550</pre>
+554
+555
+556</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 548</span>
+      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 554</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_authentication_status'>authentication_status</span>
   <span class='ivar'>@authentication_status</span>
@@ -2021,20 +2029,20 @@
       <pre class="lines">
 
 
-509
-510
-511
-512
-513
 514
 515
 516
 517
 518
-519</pre>
+519
+520
+521
+522
+523
+524</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 509</span>
+      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 514</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_cancel_all_open_option_orders'>cancel_all_open_option_orders</span>
   <span class='id identifier rubyid_number_cancelled'>number_cancelled</span> <span class='op'>=</span> <span class='int'>0</span>
@@ -2104,20 +2112,20 @@
       <pre class="lines">
 
 
-483
-484
-485
-486
-487
 488
 489
 490
 491
 492
-493</pre>
+493
+494
+495
+496
+497
+498</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 483</span>
+      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 488</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_cancel_all_open_stock_orders'>cancel_all_open_stock_orders</span>
   <span class='id identifier rubyid_number_cancelled'>number_cancelled</span> <span class='op'>=</span> <span class='int'>0</span>
@@ -2199,13 +2207,13 @@
       <pre class="lines">
 
 
-499
-500
-501
-502</pre>
+504
+505
+506
+507</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 499</span>
+      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 504</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_cancel_option_order'>cancel_option_order</span><span class='lparen'>(</span><span class='id identifier rubyid_id'>id</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_response'>response</span> <span class='op'>=</span> <span class='id identifier rubyid_post'>post</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="#ROBINHOOD_OPTION_ORDER_ROUTE-constant" title="RobinhoodClient::ROBINHOOD_OPTION_ORDER_ROUTE (constant)">ROBINHOOD_OPTION_ORDER_ROUTE</a></span></span><span class='embexpr_end'>}</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_id'>id</span><span class='embexpr_end'>}</span><span class='tstring_content'>/cancel/</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
@@ -2280,104 +2288,17 @@
       <pre class="lines">
 
 
-473
-474
-475
-476</pre>
+478
+479
+480
+481</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 473</span>
+      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 478</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_cancel_stock_order'>cancel_stock_order</span><span class='lparen'>(</span><span class='id identifier rubyid_id'>id</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_response'>response</span> <span class='op'>=</span> <span class='id identifier rubyid_post'>post</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="#ROBINHOOD_ORDERS_ROUTE-constant" title="RobinhoodClient::ROBINHOOD_ORDERS_ROUTE (constant)">ROBINHOOD_ORDERS_ROUTE</a></span></span><span class='embexpr_end'>}</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_id'>id</span><span class='embexpr_end'>}</span><span class='tstring_content'>/cancel/</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_response'>response</span><span class='period'>.</span><span class='id identifier rubyid_code'>code</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>200</span><span class='tstring_end'>&quot;</span></span>
-<span class='kw'>end</span></pre>
-    </td>
-  </tr>
-</table>
-</div>
-    
-      <div class="method_details ">
-  <h3 class="signature " id="commarize-instance_method">
-  
-    #<strong>commarize</strong>(value)  &#x21d2; <tt>String</tt> 
-  
-
-  
-
-  
-</h3><div class="docstring">
-  <div class="discussion">
-    
-<p>Add commas to a dollar amount</p>
-
-
-  </div>
-</div>
-<div class="tags">
-  
-  <div class="examples">
-    <p class="tag_title">Examples:</p>
-    
-      
-      <pre class="example code"><code>commarize(3901.5) =&gt; &quot;3,901.5&quot;</code></pre>
-    
-  </div>
-<p class="tag_title">Parameters:</p>
-<ul class="param">
-  
-    <li>
-      
-        <span class='name'>value</span>
-      
-      
-        <span class='type'>(<tt>String</tt>)</span>
-      
-      
-      
-        &mdash;
-        <div class='inline'>
-<p>a float dollar value</p>
-</div>
-      
-    </li>
-  
-</ul>
-
-<p class="tag_title">Returns:</p>
-<ul class="return">
-  
-    <li>
-      
-      
-        <span class='type'>(<tt>String</tt>)</span>
-      
-      
-      
-        &mdash;
-        <div class='inline'>
-<p>A string with commas added appropriately</p>
-</div>
-      
-    </li>
-  
-</ul>
-
-</div><table class="source_code">
-  <tr>
-    <td>
-      <pre class="lines">
-
-
-781
-782
-783</pre>
-    </td>
-    <td>
-      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 781</span>
-
-<span class='kw'>def</span> <span class='id identifier rubyid_commarize'>commarize</span><span class='lparen'>(</span><span class='id identifier rubyid_value'>value</span><span class='rparen'>)</span>
-  <span class='id identifier rubyid_value'>value</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='period'>.</span><span class='id identifier rubyid_reverse'>reverse</span><span class='period'>.</span><span class='id identifier rubyid_gsub'>gsub</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>(\d{3})(?=\d)</span><span class='regexp_end'>/</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>\\1,</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_reverse'>reverse</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -2428,12 +2349,6 @@
       <pre class="lines">
 
 
-646
-647
-648
-649
-650
-651
 652
 653
 654
@@ -2442,10 +2357,16 @@
 657
 658
 659
-660</pre>
+660
+661
+662
+663
+664
+665
+666</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 646</span>
+      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 652</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_default_watchlist'>default_watchlist</span>
 
@@ -2539,15 +2460,15 @@
       <pre class="lines">
 
 
-624
-625
-626
-627
-628
-629</pre>
+630
+631
+632
+633
+634
+635</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 624</span>
+      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 630</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_earnings'>earnings</span><span class='lparen'>(</span><span class='id identifier rubyid_symbol'>symbol</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_symbol'>symbol</span><span class='period'>.</span><span class='id identifier rubyid_upcase!'>upcase!</span>
@@ -2632,13 +2553,13 @@
       <pre class="lines">
 
 
-569
-570
-571
-572</pre>
+575
+576
+577
+578</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 569</span>
+      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 575</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_fundamentals'>fundamentals</span><span class='lparen'>(</span><span class='id identifier rubyid_symbol'>symbol</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_symbol'>symbol</span><span class='period'>.</span><span class='id identifier rubyid_upcase!'>upcase!</span>
@@ -2761,12 +2682,6 @@
       <pre class="lines">
 
 
-690
-691
-692
-693
-694
-695
 696
 697
 698
@@ -2804,10 +2719,16 @@
 730
 731
 732
-733</pre>
+733
+734
+735
+736
+737
+738
+739</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 690</span>
+      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 696</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='id identifier rubyid_url'>url</span><span class='comma'>,</span> <span class='label'>params:</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='comma'>,</span> <span class='label'>return_as_json:</span> <span class='kw'>false</span><span class='comma'>,</span> <span class='label'>authenticated:</span> <span class='kw'>true</span><span class='rparen'>)</span>
 
@@ -2922,19 +2843,20 @@
       <pre class="lines">
 
 
-325
-326
-327
-328
 329
 330
 331
 332
 333
-334</pre>
+334
+335
+336
+337
+338
+339</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 325</span>
+      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 329</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_batch_option_quote_by_instrument_urls'>get_batch_option_quote_by_instrument_urls</span><span class='lparen'>(</span><span class='id identifier rubyid_instrument_urls'>instrument_urls</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
@@ -2942,6 +2864,7 @@
   <span class='id identifier rubyid_instrument_urls'>instrument_urls</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_instrument'>instrument</span><span class='op'>|</span>
     <span class='id identifier rubyid_instruments_string'>instruments_string</span> <span class='op'>+=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_instrument'>instrument</span><span class='embexpr_end'>}</span><span class='tstring_content'>,</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
+  <span class='id identifier rubyid_instruments_string'>instruments_string</span><span class='period'>.</span><span class='id identifier rubyid_chop!'>chop!</span>
   <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>instruments</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_instruments_string'>instruments_string</span>
   <span class='id identifier rubyid_quote'>quote</span> <span class='op'>=</span> <span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='const'><span class='object_link'><a href="#ROBINHOOD_OPTION_QUOTE_ROUTE-constant" title="RobinhoodClient::ROBINHOOD_OPTION_QUOTE_ROUTE (constant)">ROBINHOOD_OPTION_QUOTE_ROUTE</a></span></span><span class='comma'>,</span> <span class='label'>params:</span> <span class='id identifier rubyid_params'>params</span><span class='comma'>,</span> <span class='label'>return_as_json:</span> <span class='kw'>true</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_quote'>quote</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>results</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
@@ -3023,10 +2946,6 @@
       <pre class="lines">
 
 
-276
-277
-278
-279
 280
 281
 282
@@ -3034,10 +2953,14 @@
 284
 285
 286
-287</pre>
+287
+288
+289
+290
+291</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 276</span>
+      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 280</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_chain_and_expirations'>get_chain_and_expirations</span><span class='lparen'>(</span><span class='id identifier rubyid_symbol'>symbol</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_instrument_id'>instrument_id</span> <span class='op'>=</span> <span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='id identifier rubyid_quote'>quote</span><span class='lparen'>(</span><span class='id identifier rubyid_symbol'>symbol</span><span class='rparen'>)</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>instrument</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='label'>return_as_json:</span> <span class='kw'>true</span><span class='rparen'>)</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>id</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
@@ -3120,19 +3043,19 @@
       <pre class="lines">
 
 
-341
-342
-343
-344
-345
 346
 347
 348
 349
-350</pre>
+350
+351
+352
+353
+354
+355</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 341</span>
+      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 346</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_multiple_option_quotes'>get_multiple_option_quotes</span><span class='lparen'>(</span><span class='id identifier rubyid_instrument_urls'>instrument_urls</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
@@ -3193,20 +3116,20 @@
       <pre class="lines">
 
 
-296
-297
-298
-299
 300
 301
 302
 303
 304
 305
-306</pre>
+306
+307
+308
+309
+310</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 296</span>
+      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 300</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_option_instruments'>get_option_instruments</span><span class='lparen'>(</span><span class='id identifier rubyid_type'>type</span><span class='comma'>,</span> <span class='id identifier rubyid_expiration_date'>expiration_date</span><span class='comma'>,</span> <span class='id identifier rubyid_chain_id'>chain_id</span><span class='rparen'>)</span>
   <span class='comment'># Get all option instruments with the desired type and expiration
@@ -3288,12 +3211,12 @@
       <pre class="lines">
 
 
-357
-358
-359</pre>
+362
+363
+364</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 357</span>
+      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 362</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_option_quote_by_id'>get_option_quote_by_id</span><span class='lparen'>(</span><span class='id identifier rubyid_instrument_id'>instrument_id</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="#ROBINHOOD_OPTION_QUOTE_ROUTE-constant" title="RobinhoodClient::ROBINHOOD_OPTION_QUOTE_ROUTE (constant)">ROBINHOOD_OPTION_QUOTE_ROUTE</a></span></span><span class='embexpr_end'>}</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_instrument_id'>instrument_id</span><span class='embexpr_end'>}</span><span class='tstring_content'>/</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='label'>return_as_json:</span> <span class='kw'>true</span><span class='rparen'>)</span>
@@ -3367,15 +3290,15 @@
       <pre class="lines">
 
 
-313
-314
-315
-316
 317
-318</pre>
+318
+319
+320
+321
+322</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 313</span>
+      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 317</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_option_quote_by_instrument_url'>get_option_quote_by_instrument_url</span><span class='lparen'>(</span><span class='id identifier rubyid_instrument_url'>instrument_url</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
@@ -3514,18 +3437,18 @@
       <pre class="lines">
 
 
-584
-585
-586
-587
-588
-589
 590
 591
-592</pre>
+592
+593
+594
+595
+596
+597
+598</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 584</span>
+      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 590</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_historical_quote'>historical_quote</span><span class='lparen'>(</span><span class='id identifier rubyid_symbol'>symbol</span><span class='comma'>,</span> <span class='id identifier rubyid_interval'>interval</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>day</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_span'>span</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>year</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_bounds'>bounds</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>regular</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
   <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
@@ -3621,16 +3544,16 @@
       <pre class="lines">
 
 
-670
-671
-672
-673
-674
-675
-676</pre>
+676
+677
+678
+679
+680
+681
+682</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 670</span>
+      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 676</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_instrument_to_symbol_lookup'>instrument_to_symbol_lookup</span><span class='lparen'>(</span><span class='id identifier rubyid_instrument'>instrument</span><span class='rparen'>)</span>
   <span class='ivar'>@instrument_to_symbol_cache</span> <span class='op'>||=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
@@ -3697,12 +3620,12 @@
       <pre class="lines">
 
 
-195
-196
-197</pre>
+199
+200
+201</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 195</span>
+      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 199</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_logged_in?'>logged_in?</span>
   <span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='const'><span class='object_link'><a href="#ROBINHOOD_USER_ROUTE-constant" title="RobinhoodClient::ROBINHOOD_USER_ROUTE (constant)">ROBINHOOD_USER_ROUTE</a></span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_code'>code</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>200</span><span class='tstring_end'>&quot;</span></span>
@@ -3784,13 +3707,13 @@
       <pre class="lines">
 
 
-613
-614
-615
-616</pre>
+619
+620
+621
+622</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 613</span>
+      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 619</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_news'>news</span><span class='lparen'>(</span><span class='id identifier rubyid_symbol'>symbol</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_symbol'>symbol</span><span class='period'>.</span><span class='id identifier rubyid_upcase!'>upcase!</span>
@@ -3865,12 +3788,12 @@
       <pre class="lines">
 
 
-231
-232
-233</pre>
+235
+236
+237</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 231</span>
+      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 235</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_option_order'>option_order</span><span class='lparen'>(</span><span class='id identifier rubyid_id'>id</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="#ROBINHOOD_OPTION_ORDER_ROUTE-constant" title="RobinhoodClient::ROBINHOOD_OPTION_ORDER_ROUTE (constant)">ROBINHOOD_OPTION_ORDER_ROUTE</a></span></span><span class='embexpr_end'>}</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_id'>id</span><span class='embexpr_end'>}</span><span class='tstring_content'>/</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='label'>return_as_json:</span> <span class='kw'>true</span><span class='rparen'>)</span>
@@ -3895,11 +3818,6 @@
       <pre class="lines">
 
 
-450
-451
-452
-453
-454
 455
 456
 457
@@ -3912,10 +3830,15 @@
 464
 465
 466
-467</pre>
+467
+468
+469
+470
+471
+472</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 450</span>
+      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 455</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_option_orders'>option_orders</span><span class='lparen'>(</span><span class='label'>last:</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 
@@ -3955,14 +3878,14 @@
       <pre class="lines">
 
 
-521
-522
-523
-524
-525</pre>
+526
+527
+528
+529
+530</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 521</span>
+      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 526</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_option_positions'>option_positions</span>
   <span class='id identifier rubyid_position_params'>position_params</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
@@ -4038,12 +3961,12 @@
       <pre class="lines">
 
 
-223
-224
-225</pre>
+227
+228
+229</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 223</span>
+      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 227</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_order'>order</span><span class='lparen'>(</span><span class='id identifier rubyid_id'>id</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="#ROBINHOOD_ORDERS_ROUTE-constant" title="RobinhoodClient::ROBINHOOD_ORDERS_ROUTE (constant)">ROBINHOOD_ORDERS_ROUTE</a></span></span><span class='embexpr_end'>}</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_id'>id</span><span class='embexpr_end'>}</span><span class='tstring_content'>/</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='label'>return_as_json:</span> <span class='kw'>true</span><span class='rparen'>)</span>
@@ -4157,10 +4080,6 @@
       <pre class="lines">
 
 
-243
-244
-245
-246
 247
 248
 249
@@ -4182,10 +4101,14 @@
 265
 266
 267
-268</pre>
+268
+269
+270
+271
+272</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 243</span>
+      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 247</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_orders'>orders</span><span class='lparen'>(</span><span class='label'>days:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>symbol:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>last:</span> <span class='kw'>nil</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
@@ -4338,11 +4261,6 @@
       <pre class="lines">
 
 
-409
-410
-411
-412
-413
 414
 415
 416
@@ -4377,10 +4295,15 @@
 445
 446
 447
-448</pre>
+448
+449
+450
+451
+452
+453</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 409</span>
+      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 414</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_place_option_order'>place_option_order</span><span class='lparen'>(</span><span class='id identifier rubyid_instrument'>instrument</span><span class='comma'>,</span> <span class='id identifier rubyid_quantity'>quantity</span><span class='comma'>,</span> <span class='id identifier rubyid_price'>price</span><span class='comma'>,</span> <span class='label'>dry_run:</span> <span class='kw'>true</span><span class='rparen'>)</span>
 
@@ -4571,11 +4494,6 @@
       <pre class="lines">
 
 
-372
-373
-374
-375
-376
 377
 378
 379
@@ -4598,10 +4516,15 @@
 396
 397
 398
-399</pre>
+399
+400
+401
+402
+403
+404</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 372</span>
+      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 377</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_place_order'>place_order</span><span class='lparen'>(</span><span class='id identifier rubyid_side'>side</span><span class='comma'>,</span> <span class='id identifier rubyid_symbol'>symbol</span><span class='comma'>,</span> <span class='id identifier rubyid_quantity'>quantity</span><span class='comma'>,</span> <span class='id identifier rubyid_price'>price</span><span class='comma'>,</span> <span class='label'>dry_run:</span> <span class='kw'>true</span><span class='rparen'>)</span>
   <span class='kw'>return</span> <span class='kw'>false</span> <span class='kw'>unless</span> <span class='id identifier rubyid_side'>side</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>buy</span><span class='tstring_end'>&quot;</span></span> <span class='op'>||</span> <span class='id identifier rubyid_side'>side</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>sell</span><span class='tstring_end'>&quot;</span></span>
@@ -4651,15 +4574,17 @@
       <pre class="lines">
 
 
-533
-534
-535</pre>
+538
+539
+540
+541</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 533</span>
+      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 538</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_portfolio'>portfolio</span>
-  <span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_account'>account</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>portfolio</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='label'>return_as_json:</span> <span class='kw'>true</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_account_number'>account_number</span> <span class='op'>=</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_account'>account</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>account_number</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="#ROBINHOOD_PORTFOLIO_ROUTE-constant" title="RobinhoodClient::ROBINHOOD_PORTFOLIO_ROUTE (constant)">ROBINHOOD_PORTFOLIO_ROUTE</a></span></span><span class='embexpr_end'>}</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_account_number'>account_number</span><span class='embexpr_end'>}</span><span class='tstring_content'>/</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='label'>return_as_json:</span> <span class='kw'>true</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -4778,12 +4703,6 @@
       <pre class="lines">
 
 
-743
-744
-745
-746
-747
-748
 749
 750
 751
@@ -4806,10 +4725,16 @@
 768
 769
 770
-771</pre>
+771
+772
+773
+774
+775
+776
+777</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 743</span>
+      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 749</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_post'>post</span><span class='lparen'>(</span><span class='id identifier rubyid_url'>url</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='label'>return_as_json:</span> <span class='kw'>false</span><span class='comma'>,</span> <span class='label'>authenticated:</span> <span class='kw'>true</span><span class='rparen'>)</span>
 
@@ -4917,13 +4842,13 @@
       <pre class="lines">
 
 
-558
-559
-560
-561</pre>
+564
+565
+566
+567</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 558</span>
+      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 564</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_quote'>quote</span><span class='lparen'>(</span><span class='id identifier rubyid_symbol'>symbol</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_symbol'>symbol</span><span class='period'>.</span><span class='id identifier rubyid_upcase!'>upcase!</span>
@@ -4949,19 +4874,19 @@
       <pre class="lines">
 
 
-527
-528
-529
-530
-531</pre>
+532
+533
+534
+535
+536</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 527</span>
+      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 532</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_stock_positions'>stock_positions</span>
   <span class='id identifier rubyid_position_params'>position_params</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
   <span class='id identifier rubyid_position_params'>position_params</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>nonzero</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='kw'>true</span>
-  <span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_account'>account</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>positions</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='label'>params:</span> <span class='id identifier rubyid_position_params'>position_params</span><span class='comma'>,</span> <span class='label'>return_as_json:</span> <span class='kw'>true</span><span class='rparen'>)</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>results</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="#ROBINHOOD_POSITIONS_ROUTE-constant" title="RobinhoodClient::ROBINHOOD_POSITIONS_ROUTE (constant)">ROBINHOOD_POSITIONS_ROUTE</a></span></span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='label'>params:</span> <span class='id identifier rubyid_position_params'>position_params</span><span class='comma'>,</span> <span class='label'>return_as_json:</span> <span class='kw'>true</span><span class='rparen'>)</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>results</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -5011,10 +4936,6 @@
       <pre class="lines">
 
 
-152
-153
-154
-155
 156
 157
 158
@@ -5045,10 +4966,14 @@
 183
 184
 185
-186</pre>
+186
+187
+188
+189
+190</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 152</span>
+      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 156</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_token_refresh'>token_refresh</span>
   <span class='kw'>begin</span>
@@ -5162,14 +5087,14 @@
       <pre class="lines">
 
 
-601
-602
-603
-604
-605</pre>
+607
+608
+609
+610
+611</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 601</span>
+      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 607</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_top_movers'>top_movers</span><span class='lparen'>(</span><span class='id identifier rubyid_direction'>direction</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
@@ -5253,14 +5178,14 @@
       <pre class="lines">
 
 
-637
-638
-639
-640
-641</pre>
+643
+644
+645
+646
+647</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 637</span>
+      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 643</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_upcoming_earnings'>upcoming_earnings</span><span class='lparen'>(</span><span class='id identifier rubyid_days'>days</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
@@ -5324,12 +5249,12 @@
       <pre class="lines">
 
 
-205
-206
-207</pre>
+209
+210
+211</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 205</span>
+      <pre class="code"><span class="info file"># File 'lib/robinhood_client.rb', line 209</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_user'>user</span>
   <span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='const'><span class='object_link'><a href="#ROBINHOOD_USER_ROUTE-constant" title="RobinhoodClient::ROBINHOOD_USER_ROUTE (constant)">ROBINHOOD_USER_ROUTE</a></span></span><span class='comma'>,</span> <span class='label'>return_as_json:</span> <span class='kw'>true</span><span class='rparen'>)</span>
@@ -5344,7 +5269,7 @@
 </div>
 
       <div id="footer">
-  Generated on Sat Apr  4 15:49:43 2020 by
+  Generated on Sun Jul 19 20:12:34 2020 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.20 (ruby-2.7.1).
 </div>
