@@ -636,7 +636,7 @@ class RobinhoodConsole
 
       all_time_portfolio_change += all_time_dollar_change
 
-      stock_position_rows << [stock["symbol"], "#{'%.2f' % quantity}", "$ #{'%.2f' % latest_price}", "$ #{'%.2f' % cost_basis}", "$ #{'%.2f' % day_dollar_change}".send(day_color), "#{'%.2f' % day_percent_change} %".send(day_color), "$ #{@client.commarize('%.2f' % all_time_dollar_change)}".send(all_time_color)]
+      stock_position_rows << [stock["symbol"], "#{'%.2f' % quantity}", "$ #{'%.2f' % latest_price}", "$ #{'%.2f' % cost_basis}", "$ #{'%.2f' % day_dollar_change}".send(day_color), "#{'%.2f' % day_percent_change} %".send(day_color), "$ #{FormatHelpers.commarize('%.2f' % all_time_dollar_change)}".send(all_time_color)]
     end
 
     options_positions.each do |option_position|
@@ -675,10 +675,10 @@ class RobinhoodConsole
 
     all_time_portfolio_color = all_time_portfolio_change >= 0 ? :green : :red
 
-    portfolio_text += "\n\nHoldings: $ #{@client.commarize('%.2f' % portfolio["market_value"].to_f)}\n"
-    portfolio_text +=     "Cash:     $ #{@client.commarize('%.2f' % (account["cash"].to_f + account["unsettled_funds"].to_f))}\n"
-    portfolio_text +=     "Equity:   $ #{@client.commarize('%.2f' % portfolio["equity"].to_f)}\n"
-    portfolio_text += "\nAll time change on stock holdings: " + "$ #{@client.commarize('%.2f' % all_time_portfolio_change)}\n".send(all_time_portfolio_color)
+    portfolio_text += "\n\nHoldings: $ #{FormatHelpers.commarize('%.2f' % portfolio["market_value"].to_f)}\n"
+    portfolio_text +=     "Cash:     $ #{FormatHelpers.commarize('%.2f' % (account["cash"].to_f + account["unsettled_funds"].to_f))}\n"
+    portfolio_text +=     "Equity:   $ #{FormatHelpers.commarize('%.2f' % portfolio["equity"].to_f)}\n"
+    portfolio_text += "\nAll time change on stock holdings: " + "$ #{FormatHelpers.commarize('%.2f' % all_time_portfolio_change)}\n".send(all_time_portfolio_color)
     portfolio_text
 
   end

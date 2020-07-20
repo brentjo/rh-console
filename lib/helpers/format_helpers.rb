@@ -15,4 +15,16 @@ module FormatHelpers
       rounded
     end
   end
+
+  # Add commas to a dollar amount
+  #
+  # @param value [String] a float dollar value
+  #
+  # @return [String] A string with commas added appropriately
+  #
+  # @example
+  #   commarize(3901.5) => "3,901.5"
+  def self.commarize(value)
+    value.to_s.reverse.gsub(/(\d{3})(?=\d)/, '\\1,').reverse
+  end
 end

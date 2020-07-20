@@ -91,7 +91,7 @@ class RobinhoodConsoleTest < Minitest::Test
   end
 
   def test_place_buy_order
-    # Set up the mock IO
+    #Set up the mock IO
     io = StringIO.new
     io.puts "buy-stock --symbol snap --quantity 100 --price 8.67"
     io.puts "y"

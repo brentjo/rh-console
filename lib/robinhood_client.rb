@@ -20,8 +20,12 @@ class RobinhoodClient
   ROBINHOOD_ACCOUNTS_ROUTE              = "https://api.robinhood.com/accounts/".freeze
   # Route that returns authenticated user's order history
   ROBINHOOD_ORDERS_ROUTE                = "https://api.robinhood.com/orders/".freeze
+  # Route that returns the authenticated user's portfolio
+  ROBINHOOD_PORTFOLIO_ROUTE             = "https://api.robinhood.com/portfolios/".freeze
   # Route to fetch the authenticated user's default watchlist
   ROBINHOOD_DEFAULT_WATCHLIST           = "https://api.robinhood.com/watchlists/Default/".freeze
+  # Route to fetch the authenticated user's stock positions
+  ROBINHOOD_POSITIONS_ROUTE             = "https://api.robinhood.com/positions/".freeze
   # Route to fetch the authenticated user's option positions
   ROBINHOOD_OPTIONS_POSITIONS_ROUTE     = "https://api.robinhood.com/options/positions/".freeze
   # Route to get a quote for an option ID
@@ -115,7 +119,7 @@ class RobinhoodClient
   #   my_new_client = RobinhoodClient.interactively_create_client
   def self.interactively_create_client
     print "Enter your username: "
-    username = gets.chomp
+    username = STDIN.gets.chomp
     print "Password: "
     password = STDIN.noecho(&:gets).chomp
 
@@ -328,6 +332,7 @@ class RobinhoodClient
     instrument_urls.each do |instrument|
       instruments_string += "#{instrument},"
     end
+    instruments_string.chop!
     params["instruments"] = instruments_string
     quote = get(ROBINHOOD_OPTION_QUOTE_ROUTE, params: params, return_as_json: true)
     quote["results"]
@@ -527,11 +532,12 @@ class RobinhoodClient
   def stock_positions
     position_params = {}
     position_params["nonzero"] = true
-    get(self.account["positions"], params: position_params, return_as_json: true)["results"]
+    get("#{ROBINHOOD_POSITIONS_ROUTE}", params: position_params, return_as_json: true)["results"]
   end
 
   def portfolio
-    get(self.account["portfolio"], return_as_json: true)
+    account_number = self.account["account_number"]
+    get("#{ROBINHOOD_PORTFOLIO_ROUTE}#{account_number}/", return_as_json: true)
   end
 
   def account
@@ -769,17 +775,4 @@ class RobinhoodClient
     end
 
   end
-
-  # Add commas to a dollar amount
-  #
-  # @param value [String] a float dollar value
-  #
-  # @return [String] A string with commas added appropriately
-  #
-  # @example
-  #   commarize(3901.5) => "3,901.5"
-  def commarize(value)
-    value.to_s.reverse.gsub(/(\d{3})(?=\d)/, '\\1,').reverse
-  end
-
 end
